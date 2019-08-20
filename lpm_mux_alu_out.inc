@@ -18,6 +18,7 @@ FUNCTION lpm_mux_alu_out
 	data0x[31..0],
 	data1x[31..0],
 	data2x[31..0],
+	data3x[31..0],
 	sel[1..0]
 )
 

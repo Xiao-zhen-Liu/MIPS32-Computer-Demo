@@ -41,6 +41,7 @@ SUBDESIGN lpm_mux_alu_out
 	data0x[31..0]	 : INPUT;
 	data1x[31..0]	 : INPUT;
 	data2x[31..0]	 : INPUT;
+	data3x[31..0]	 : INPUT;
 	sel[1..0]	 : INPUT;
 	result[31..0]	 : OUTPUT;
 )
@@ -48,7 +49,7 @@ SUBDESIGN lpm_mux_alu_out
 VARIABLE
 
 	lpm_mux_component : lpm_mux WITH (
-			LPM_SIZE = 3,
+			LPM_SIZE = 4,
 			LPM_TYPE = "LPM_MUX",
 			LPM_WIDTH = 32,
 			LPM_WIDTHS = 2
@@ -58,6 +59,7 @@ BEGIN
 
 	result[31..0] = lpm_mux_component.result[31..0];
 	lpm_mux_component.sel[1..0] = sel[1..0];
+	lpm_mux_component.data[3..3][31..0] = data3x[31..0];
 	lpm_mux_component.data[2..2][31..0] = data2x[31..0];
 	lpm_mux_component.data[1..1][31..0] = data1x[31..0];
 	lpm_mux_component.data[0..0][31..0] = data0x[31..0];
@@ -70,16 +72,18 @@ END;
 -- ============================================================
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone III"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
--- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "3"
+-- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "4"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_MUX"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "32"
 -- Retrieval info: CONSTANT: LPM_WIDTHS NUMERIC "2"
 -- Retrieval info: USED_PORT: data0x 0 0 32 0 INPUT NODEFVAL data0x[31..0]
 -- Retrieval info: USED_PORT: data1x 0 0 32 0 INPUT NODEFVAL data1x[31..0]
 -- Retrieval info: USED_PORT: data2x 0 0 32 0 INPUT NODEFVAL data2x[31..0]
+-- Retrieval info: USED_PORT: data3x 0 0 32 0 INPUT NODEFVAL data3x[31..0]
 -- Retrieval info: USED_PORT: result 0 0 32 0 OUTPUT NODEFVAL result[31..0]
 -- Retrieval info: USED_PORT: sel 0 0 2 0 INPUT NODEFVAL sel[1..0]
 -- Retrieval info: CONNECT: result 0 0 32 0 @result 0 0 32 0
+-- Retrieval info: CONNECT: @data 1 3 32 0 data3x 0 0 32 0
 -- Retrieval info: CONNECT: @data 1 2 32 0 data2x 0 0 32 0
 -- Retrieval info: CONNECT: @data 1 1 32 0 data1x 0 0 32 0
 -- Retrieval info: CONNECT: @data 1 0 32 0 data0x 0 0 32 0
