@@ -1082,12 +1082,6 @@ applicable agreement for further details.
 	(pt 1184 -400)
 )
 (connector
-	(text "C[31..0]" (rect 1000 32 1049 47)(font "Arial" ))
-	(pt 1120 48)
-	(pt 952 48)
-	(bus)
-)
-(connector
 	(pt 368 120)
 	(pt 440 120)
 	(bus)
@@ -1165,6 +1159,12 @@ applicable agreement for further details.
 (connector
 	(pt 1160 280)
 	(pt 1240 280)
+	(bus)
+)
+(connector
+	(text "Out[31..0]" (rect 1000 32 1061 47)(font "Arial" ))
+	(pt 1120 48)
+	(pt 952 48)
 	(bus)
 )
 (junction (pt 120 280))

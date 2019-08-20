@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CO-MIPS32
-Tue Aug 20 22:04:08 2019
+Tue Aug 20 22:33:40 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -46,13 +46,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug 20 22:04:08 2019        ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug 20 22:33:40 2019        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; CO-MIPS32                                    ;
 ; Top-level Entity Name              ; ALU                                          ;
 ; Family                             ; Cyclone III                                  ;
-; Total logic elements               ; 147                                          ;
-;     Total combinational functions  ; 147                                          ;
+; Total logic elements               ; 146                                          ;
+;     Total combinational functions  ; 146                                          ;
 ;     Dedicated logic registers      ; 0                                            ;
 ; Total registers                    ; 0                                            ;
 ; Total pins                         ; 101                                          ;
@@ -194,16 +194,16 @@ applicable agreement for further details.
 +---------------------------------------------+-----------------+
 ; Resource                                    ; Usage           ;
 +---------------------------------------------+-----------------+
-; Estimated Total logic elements              ; 147             ;
+; Estimated Total logic elements              ; 146             ;
 ;                                             ;                 ;
-; Total combinational functions               ; 147             ;
+; Total combinational functions               ; 146             ;
 ; Logic element usage by number of LUT inputs ;                 ;
-;     -- 4 input functions                    ; 61              ;
+;     -- 4 input functions                    ; 44              ;
 ;     -- 3 input functions                    ; 35              ;
-;     -- <=2 input functions                  ; 51              ;
+;     -- <=2 input functions                  ; 67              ;
 ;                                             ;                 ;
 ; Logic elements by mode                      ;                 ;
-;     -- normal mode                          ; 114             ;
+;     -- normal mode                          ; 113             ;
 ;     -- arithmetic mode                      ; 33              ;
 ;                                             ;                 ;
 ; Total registers                             ; 0               ;
@@ -212,9 +212,9 @@ applicable agreement for further details.
 ;                                             ;                 ;
 ; I/O pins                                    ; 101             ;
 ; Maximum fan-out node                        ; ALUctr[0]~input ;
-; Maximum fan-out                             ; 54              ;
-; Total fan-out                               ; 584             ;
-; Average fan-out                             ; 1.67            ;
+; Maximum fan-out                             ; 36              ;
+; Total fan-out                               ; 548             ;
+; Average fan-out                             ; 1.57            ;
 +---------------------------------------------+-----------------+
 
 
@@ -223,14 +223,14 @@ applicable agreement for further details.
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                              ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
-; |ALU                                         ; 147 (2)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |ALU                                                                                             ; work         ;
+; |ALU                                         ; 146 (2)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |ALU                                                                                             ; work         ;
 ;    |add_sub:inst|                            ; 66 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst                                                                                ; work         ;
 ;       |lpm_add_sub0:inst|                    ; 66 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst|lpm_add_sub0:inst                                                              ; work         ;
 ;          |lpm_add_sub:lpm_add_sub_component| ; 66 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component                            ; work         ;
 ;             |add_sub_drh:auto_generated|     ; 66 (66)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component|add_sub_drh:auto_generated ; work         ;
-;    |lpm_mux_alu_out:inst9|                   ; 68 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9                                                                       ; work         ;
-;       |lpm_mux:lpm_mux_component|            ; 68 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component                                             ; work         ;
-;          |mux_lrc:auto_generated|            ; 68 (68)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component|mux_lrc:auto_generated                      ;              ;
+;    |lpm_mux_alu_out:inst9|                   ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9                                                                       ; work         ;
+;       |lpm_mux:lpm_mux_component|            ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component                                             ; work         ;
+;          |mux_lrc:auto_generated|            ; 67 (67)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component|mux_lrc:auto_generated                      ; work         ;
 ;    |lpm_or0:inst19|                          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_or0:inst19                                                                              ; work         ;
 ;       |lpm_or:lpm_or_component|              ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_or0:inst19|lpm_or:lpm_or_component                                                      ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
@@ -381,7 +381,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Aug 20 22:04:06 2019
+    Info: Processing started: Tue Aug 20 22:33:38 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CO-MIPS32 -c CO-MIPS32
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file add_sub.bdf
@@ -464,14 +464,14 @@ Info: Timing-Driven Synthesis is running
 Warning: Ignored assignments for entity "CO-MIPS32" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity "CO-MIPS32" -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity "CO-MIPS32" -section_id "Root Region" was ignored
-Info: Implemented 248 device resources after synthesis - the final resource count might be different
+Info: Implemented 247 device resources after synthesis - the final resource count might be different
     Info: Implemented 67 input pins
     Info: Implemented 34 output pins
-    Info: Implemented 147 logic cells
+    Info: Implemented 146 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 269 megabytes
-    Info: Processing ended: Tue Aug 20 22:04:08 2019
+    Info: Peak virtual memory: 268 megabytes
+    Info: Processing ended: Tue Aug 20 22:33:40 2019
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

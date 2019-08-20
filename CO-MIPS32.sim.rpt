@@ -1,5 +1,5 @@
 Simulator report for CO-MIPS32
-Tue Aug 20 22:16:22 2019
+Tue Aug 20 22:34:06 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -47,7 +47,7 @@ applicable agreement for further details.
 ; Simulation End Time         ; 700.0 ns     ;
 ; Simulation Netlist Size     ; 767 nodes    ;
 ; Simulation Coverage         ;      91.40 % ;
-; Total Number of Transitions ; 14847        ;
+; Total Number of Transitions ; 15689        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone III  ;
 +-----------------------------+--------------+
@@ -913,18 +913,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Aug 20 22:16:21 2019
+    Info: Processing started: Tue Aug 20 22:34:06 2019
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off CO-MIPS32 -c CO-MIPS32
 Info: Using vector source file "D:/Users/Documents/GitHub/MIPS32-Computer-Demo/test_ALU.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is      91.40 %
-Info: Number of transitions in simulation is 14847
+Info: Number of transitions in simulation is 15689
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 182 megabytes
-    Info: Processing ended: Tue Aug 20 22:16:22 2019
+    Info: Processing ended: Tue Aug 20 22:34:07 2019
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

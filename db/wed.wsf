@@ -855,13 +855,13 @@ VECTOR("D:/Users/Documents/GitHub/MIPS32-Computer-Demo/test_add_sub.vwf")
 	}
 }
 
-VECTOR("D:/Users/Documents/GitHub/MIPS32-Computer-Demo/test_ALU.vwf")
+VECTOR("D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/CO-MIPS32.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 297653;
-		ZEND = 547653;
-		NUMERATOR = 1218;
-		DENOMINATOR = 250000;
+		ZBEGIN = 0;
+		ZEND = 350000;
+		NUMERATOR = 1088;
+		DENOMINATOR = 350000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -1714,13 +1714,13 @@ VECTOR("D:/Users/Documents/GitHub/MIPS32-Computer-Demo/test_ALU.vwf")
 	}
 }
 
-VECTOR("D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/CO-MIPS32.sim.cvwf")
+VECTOR("D:/Users/Documents/GitHub/MIPS32-Computer-Demo/test_ALU.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 700000;
-		NUMERATOR = 1088;
-		DENOMINATOR = 700000;
+		ZEND = 265394;
+		NUMERATOR = 1218;
+		DENOMINATOR = 250000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
