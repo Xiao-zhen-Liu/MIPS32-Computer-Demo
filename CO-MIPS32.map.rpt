@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CO-MIPS32
-Tue Aug 20 22:33:40 2019
+Wed Aug 21 17:17:28 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -14,13 +14,15 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: lpm_decode0:inst2|lpm_decode:lpm_decode_component
- 10. Parameter Settings for User Entity Instance: add_sub:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component
- 11. Parameter Settings for User Entity Instance: lpm_or0:inst19|lpm_or:lpm_or_component
- 12. Parameter Settings for User Entity Instance: lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component
- 13. Parameter Settings for User Entity Instance: lpm_or_32:inst10|lpm_or:lpm_or_component
- 14. Parameter Settings for User Entity Instance: lpm_mux_compare:inst11|lpm_mux:lpm_mux_component
- 15. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: lpm_decode0:inst2|lpm_decode:lpm_decode_component
+ 11. Parameter Settings for User Entity Instance: add_sub:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component
+ 12. Parameter Settings for User Entity Instance: lpm_or0:inst19|lpm_or:lpm_or_component
+ 13. Parameter Settings for User Entity Instance: lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component
+ 14. Parameter Settings for User Entity Instance: lpm_or_32:inst10|lpm_or:lpm_or_component
+ 15. Parameter Settings for User Entity Instance: lpm_mux_compare:inst11|lpm_mux:lpm_mux_component
+ 16. Parameter Settings for User Entity Instance: lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -46,13 +48,13 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Aug 20 22:33:40 2019        ;
+; Analysis & Synthesis Status        ; Successful - Wed Aug 21 17:17:28 2019        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; CO-MIPS32                                    ;
 ; Top-level Entity Name              ; ALU                                          ;
 ; Family                             ; Cyclone III                                  ;
-; Total logic elements               ; 146                                          ;
-;     Total combinational functions  ; 146                                          ;
+; Total logic elements               ; 318                                          ;
+;     Total combinational functions  ; 318                                          ;
 ;     Dedicated logic registers      ; 0                                            ;
 ; Total registers                    ; 0                                            ;
 ; Total pins                         ; 101                                          ;
@@ -161,32 +163,36 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+
-; add_sub.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/add_sub.bdf         ;
-; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File  ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/ALU.bdf             ;
-; lpm_decode0.tdf                  ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_decode0.tdf     ;
-; lpm_decode.inc                   ; yes             ; Auto-Found AHDL File               ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_decode.inc     ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                       ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_decode.tdf     ;
-; db/decode_5af.tdf                ; yes             ; Auto-Generated Megafunction        ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/decode_5af.tdf   ;
-; lpm_add_sub0.tdf                 ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_add_sub0.tdf    ;
-; lpm_add_sub.inc                  ; yes             ; Auto-Found AHDL File               ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_add_sub.inc    ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_add_sub.tdf    ;
-; db/add_sub_drh.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/add_sub_drh.tdf  ;
-; lpm_or0.tdf                      ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_or0.tdf         ;
-; lpm_or.inc                       ; yes             ; Auto-Found AHDL File               ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_or.inc         ;
-; lpm_or.tdf                       ; yes             ; Megafunction                       ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_or.tdf         ;
-; lpm_mux_alu_out.tdf              ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_mux_alu_out.tdf ;
-; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_mux.inc        ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_mux.tdf        ;
-; db/mux_lrc.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/mux_lrc.tdf      ;
-; lpm_or_32.tdf                    ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_or_32.tdf       ;
-; lpm_mux_compare.tdf              ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_mux_compare.tdf ;
-; db/mux_irc.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/mux_irc.tdf      ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                ;
++----------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                          ;
++----------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+
+; add_sub.bdf                            ; yes             ; User Block Diagram/Schematic File  ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/add_sub.bdf                            ;
+; ALU.bdf                                ; yes             ; User Block Diagram/Schematic File  ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/ALU.bdf                                ;
+; lpm_decode0.tdf                        ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_decode0.tdf                        ;
+; lpm_decode.inc                         ; yes             ; Auto-Found AHDL File               ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_decode.inc                        ;
+; lpm_decode.tdf                         ; yes             ; Megafunction                       ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_decode.tdf                        ;
+; db/decode_5af.tdf                      ; yes             ; Auto-Generated Megafunction        ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/decode_5af.tdf                      ;
+; lpm_add_sub0.tdf                       ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_add_sub0.tdf                       ;
+; lpm_add_sub.inc                        ; yes             ; Auto-Found AHDL File               ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_add_sub.inc                       ;
+; lpm_add_sub.tdf                        ; yes             ; Megafunction                       ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_add_sub.tdf                       ;
+; db/add_sub_drh.tdf                     ; yes             ; Auto-Generated Megafunction        ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/add_sub_drh.tdf                     ;
+; lpm_or0.tdf                            ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_or0.tdf                            ;
+; lpm_or.inc                             ; yes             ; Auto-Found AHDL File               ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_or.inc                            ;
+; lpm_or.tdf                             ; yes             ; Megafunction                       ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_or.tdf                            ;
+; lpm_mux_alu_out.tdf                    ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_mux_alu_out.tdf                    ;
+; lpm_mux.inc                            ; yes             ; Auto-Found AHDL File               ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_mux.inc                           ;
+; lpm_mux.tdf                            ; yes             ; Megafunction                       ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_mux.tdf                           ;
+; db/mux_lrc.tdf                         ; yes             ; Auto-Generated Megafunction        ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/mux_lrc.tdf                         ;
+; lpm_or_32.tdf                          ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_or_32.tdf                          ;
+; lpm_mux_compare.tdf                    ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_mux_compare.tdf                    ;
+; db/mux_irc.tdf                         ; yes             ; Auto-Generated Megafunction        ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/mux_irc.tdf                         ;
+; lpm_clshift_arithmetic_32bit_right.tdf ; yes             ; Auto-Found Wizard-Generated File   ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/lpm_clshift_arithmetic_32bit_right.tdf ;
+; lpm_clshift.inc                        ; yes             ; Auto-Found AHDL File               ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_clshift.inc                       ;
+; lpm_clshift.tdf                        ; yes             ; Megafunction                       ; d:/altera/91sp2/quartus/libraries/megafunctions/lpm_clshift.tdf                       ;
+; db/lpm_clshift_euc.tdf                 ; yes             ; Auto-Generated Megafunction        ; D:/Users/Documents/GitHub/MIPS32-Computer-Demo/db/lpm_clshift_euc.tdf                 ;
++----------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------+
@@ -194,16 +200,16 @@ applicable agreement for further details.
 +---------------------------------------------+-----------------+
 ; Resource                                    ; Usage           ;
 +---------------------------------------------+-----------------+
-; Estimated Total logic elements              ; 146             ;
+; Estimated Total logic elements              ; 318             ;
 ;                                             ;                 ;
-; Total combinational functions               ; 146             ;
+; Total combinational functions               ; 318             ;
 ; Logic element usage by number of LUT inputs ;                 ;
-;     -- 4 input functions                    ; 44              ;
-;     -- 3 input functions                    ; 35              ;
-;     -- <=2 input functions                  ; 67              ;
+;     -- 4 input functions                    ; 160             ;
+;     -- 3 input functions                    ; 117             ;
+;     -- <=2 input functions                  ; 41              ;
 ;                                             ;                 ;
 ; Logic elements by mode                      ;                 ;
-;     -- normal mode                          ; 113             ;
+;     -- normal mode                          ; 285             ;
 ;     -- arithmetic mode                      ; 33              ;
 ;                                             ;                 ;
 ; Total registers                             ; 0               ;
@@ -212,28 +218,33 @@ applicable agreement for further details.
 ;                                             ;                 ;
 ; I/O pins                                    ; 101             ;
 ; Maximum fan-out node                        ; ALUctr[0]~input ;
-; Maximum fan-out                             ; 36              ;
-; Total fan-out                               ; 548             ;
-; Average fan-out                             ; 1.57            ;
+; Maximum fan-out                             ; 59              ;
+; Total fan-out                               ; 1206            ;
+; Average fan-out                             ; 2.32            ;
 +---------------------------------------------+-----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                        ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                              ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
-; |ALU                                         ; 146 (2)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |ALU                                                                                             ; work         ;
-;    |add_sub:inst|                            ; 66 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst                                                                                ; work         ;
-;       |lpm_add_sub0:inst|                    ; 66 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst|lpm_add_sub0:inst                                                              ; work         ;
-;          |lpm_add_sub:lpm_add_sub_component| ; 66 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component                            ; work         ;
-;             |add_sub_drh:auto_generated|     ; 66 (66)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component|add_sub_drh:auto_generated ; work         ;
-;    |lpm_mux_alu_out:inst9|                   ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9                                                                       ; work         ;
-;       |lpm_mux:lpm_mux_component|            ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component                                             ; work         ;
-;          |mux_lrc:auto_generated|            ; 67 (67)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component|mux_lrc:auto_generated                      ; work         ;
-;    |lpm_or0:inst19|                          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_or0:inst19                                                                              ; work         ;
-;       |lpm_or:lpm_or_component|              ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_or0:inst19|lpm_or:lpm_or_component                                                      ; work         ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                       ;
++-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                            ; Library Name ;
++-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
+; |ALU                                          ; 318 (7)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |ALU                                                                                                           ; work         ;
+;    |add_sub:inst|                             ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst                                                                                              ; work         ;
+;       |lpm_add_sub0:inst|                     ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst|lpm_add_sub0:inst                                                                            ; work         ;
+;          |lpm_add_sub:lpm_add_sub_component|  ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component                                          ; work         ;
+;             |add_sub_drh:auto_generated|      ; 67 (67)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|add_sub:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component|add_sub_drh:auto_generated               ; work         ;
+;    |lpm_clshift_arithmetic_32bit_right:inst1| ; 115 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_clshift_arithmetic_32bit_right:inst1                                                                  ; work         ;
+;       |lpm_clshift:lpm_clshift_component|     ; 115 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component                                ; work         ;
+;          |lpm_clshift_euc:auto_generated|     ; 115 (115)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated ; work         ;
+;    |lpm_mux_alu_out:inst9|                    ; 117 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9                                                                                     ; work         ;
+;       |lpm_mux:lpm_mux_component|             ; 117 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component                                                           ; work         ;
+;          |mux_lrc:auto_generated|             ; 117 (117)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component|mux_lrc:auto_generated                                    ;              ;
+;    |lpm_or0:inst19|                           ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_or0:inst19                                                                                            ; work         ;
+;       |lpm_or:lpm_or_component|               ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_or0:inst19|lpm_or:lpm_or_component                                                                    ; work         ;
+;    |lpm_or_32:inst10|                         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_or_32:inst10                                                                                          ; work         ;
+;       |lpm_or:lpm_or_component|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|lpm_or_32:inst10|lpm_or:lpm_or_component                                                                  ; work         ;
++-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -250,6 +261,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |ALU|lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated|sbit_w[172] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated|sbit_w[164] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |ALU|lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated|sbit_w[162] ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated|sbit_w[160] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------+
@@ -375,13 +398,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component ;
++----------------+-----------------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value           ; Type                                                                                 ;
++----------------+-----------------+--------------------------------------------------------------------------------------+
+; LPM_PIPELINE   ; 0               ; Untyped                                                                              ;
+; LPM_SHIFTTYPE  ; ARITHMETIC      ; Untyped                                                                              ;
+; LPM_WIDTH      ; 32              ; Untyped                                                                              ;
+; LPM_WIDTHDIST  ; 5               ; Untyped                                                                              ;
+; CBXI_PARAMETER ; lpm_clshift_euc ; Untyped                                                                              ;
++----------------+-----------------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Aug 20 22:33:38 2019
+    Info: Processing started: Wed Aug 21 17:17:23 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CO-MIPS32 -c CO-MIPS32
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file add_sub.bdf
@@ -460,18 +497,31 @@ Info: Instantiated megafunction "lpm_mux_compare:inst11|lpm_mux:lpm_mux_componen
 Info: Found 1 design units, including 1 entities, in source file db/mux_irc.tdf
     Info: Found entity 1: mux_irc
 Info: Elaborating entity "mux_irc" for hierarchy "lpm_mux_compare:inst11|lpm_mux:lpm_mux_component|mux_irc:auto_generated"
+Warning: Using design file lpm_clshift_arithmetic_32bit_right.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_clshift_arithmetic_32bit_right
+Info: Elaborating entity "lpm_clshift_arithmetic_32bit_right" for hierarchy "lpm_clshift_arithmetic_32bit_right:inst1"
+Info: Elaborating entity "lpm_clshift" for hierarchy "lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component"
+Info: Elaborated megafunction instantiation "lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component"
+Info: Instantiated megafunction "lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_CLSHIFT"
+    Info: Parameter "LPM_SHIFTTYPE" = "ARITHMETIC"
+    Info: Parameter "LPM_WIDTH" = "32"
+    Info: Parameter "LPM_WIDTHDIST" = "5"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_clshift_euc.tdf
+    Info: Found entity 1: lpm_clshift_euc
+Info: Elaborating entity "lpm_clshift_euc" for hierarchy "lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component|lpm_clshift_euc:auto_generated"
 Info: Timing-Driven Synthesis is running
 Warning: Ignored assignments for entity "CO-MIPS32" -- entity does not exist in design
     Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity "CO-MIPS32" -section_id "Root Region" was ignored
     Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity "CO-MIPS32" -section_id "Root Region" was ignored
-Info: Implemented 247 device resources after synthesis - the final resource count might be different
+Info: Implemented 419 device resources after synthesis - the final resource count might be different
     Info: Implemented 67 input pins
     Info: Implemented 34 output pins
-    Info: Implemented 146 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 268 megabytes
-    Info: Processing ended: Tue Aug 20 22:33:40 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Implemented 318 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 270 megabytes
+    Info: Processing ended: Wed Aug 21 17:17:28 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:03
 
 

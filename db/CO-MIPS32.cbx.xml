@@ -3,7 +3,8 @@
 	<PROJECT NAME="CO-MIPS32">
 		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|add_sub:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_drh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|lpm_decode0:inst2|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_5af.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_lrc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|lpm_mux_compare:inst11|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_irc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|lpm_clshift_arithmetic_32bit_right:inst1|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_euc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_lrc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
