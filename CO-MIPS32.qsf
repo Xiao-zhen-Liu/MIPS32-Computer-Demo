@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16Q240C8
-set_global_assignment -name TOP_LEVEL_ENTITY ACU
+set_global_assignment -name TOP_LEVEL_ENTITY DataPath
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:36:40  AUGUST 20, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -49,8 +49,14 @@ set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name LL_ROOT_REGION ON -entity "CO-MIPS32" -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -entity "CO-MIPS32" -section_id "Root Region"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE DMEM.vwf
 set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
 set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name BDF_FILE DBIU.bdf
+set_global_assignment -name BDF_FILE IBIU.bdf
+set_global_assignment -name BDF_FILE IMEM.bdf
+set_global_assignment -name BDF_FILE DMEM.bdf
+set_global_assignment -name BDF_FILE DataPath.bdf
 set_global_assignment -name BDF_FILE GPRs.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE GPRs.vwf
 set_global_assignment -name BDF_FILE ALU.bdf
@@ -86,9 +92,15 @@ set_global_assignment -name QIP_FILE lpm_mux0.qip
 set_global_assignment -name QIP_FILE lpm_dff0.qip
 set_global_assignment -name QIP_FILE lpm_dff1.qip
 set_global_assignment -name QIP_FILE lpm_decode1.qip
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name QIP_FILE lpm_mux2.qip
+set_global_assignment -name QIP_FILE lpm_ram_dq0.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE DMEM.vwf
+set_global_assignment -name QIP_FILE lpm_and2.qip
+set_global_assignment -name QIP_FILE lpm_or1.qip
+set_global_assignment -name QIP_FILE PC.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE ACU.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

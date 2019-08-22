@@ -1,0 +1,309 @@
+Simulator report for BIU_MEM
+Thu Aug 22 09:58:18 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 75 nodes     ;
+; Simulation Coverage         ;      14.67 % ;
+; Total Number of Transitions ; 225          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Functional    ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; IMEM_TEST.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport     ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport     ; Transport     ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-----------------------------------------------------------------------------------------------+
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ALTSYNCRAM ;
++-----------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      14.67 % ;
+; Total nodes checked                                 ; 75           ;
+; Total output ports checked                          ; 75           ;
+; Total output ports with complete 1/0-value coverage ; 11           ;
+; Total output ports with no 1/0-value coverage       ; 64           ;
+; Total output ports with no 1-value coverage         ; 64           ;
+; Total output ports with no 0-value coverage         ; 64           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                      ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                        ; Output Port Name                                                                           ; Output Port Type ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+; |IMEM|dout[31]                                                                                   ; |IMEM|dout[31]                                                                             ; pin_out          ;
+; |IMEM|dout[2]                                                                                    ; |IMEM|dout[2]                                                                              ; pin_out          ;
+; |IMEM|dout[1]                                                                                    ; |IMEM|dout[1]                                                                              ; pin_out          ;
+; |IMEM|dout[0]                                                                                    ; |IMEM|dout[0]                                                                              ; pin_out          ;
+; |IMEM|CLK                                                                                        ; |IMEM|CLK                                                                                  ; out              ;
+; |IMEM|addr[1]                                                                                    ; |IMEM|addr[1]                                                                              ; out              ;
+; |IMEM|addr[0]                                                                                    ; |IMEM|addr[0]                                                                              ; out              ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a0  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[0]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a1  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[1]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a2  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[2]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a31 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[31] ; portadataout0    ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                         ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                        ; Output Port Name                                                                           ; Output Port Type ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+; |IMEM|dout[30]                                                                                   ; |IMEM|dout[30]                                                                             ; pin_out          ;
+; |IMEM|dout[29]                                                                                   ; |IMEM|dout[29]                                                                             ; pin_out          ;
+; |IMEM|dout[28]                                                                                   ; |IMEM|dout[28]                                                                             ; pin_out          ;
+; |IMEM|dout[27]                                                                                   ; |IMEM|dout[27]                                                                             ; pin_out          ;
+; |IMEM|dout[26]                                                                                   ; |IMEM|dout[26]                                                                             ; pin_out          ;
+; |IMEM|dout[25]                                                                                   ; |IMEM|dout[25]                                                                             ; pin_out          ;
+; |IMEM|dout[24]                                                                                   ; |IMEM|dout[24]                                                                             ; pin_out          ;
+; |IMEM|dout[23]                                                                                   ; |IMEM|dout[23]                                                                             ; pin_out          ;
+; |IMEM|dout[22]                                                                                   ; |IMEM|dout[22]                                                                             ; pin_out          ;
+; |IMEM|dout[21]                                                                                   ; |IMEM|dout[21]                                                                             ; pin_out          ;
+; |IMEM|dout[20]                                                                                   ; |IMEM|dout[20]                                                                             ; pin_out          ;
+; |IMEM|dout[19]                                                                                   ; |IMEM|dout[19]                                                                             ; pin_out          ;
+; |IMEM|dout[18]                                                                                   ; |IMEM|dout[18]                                                                             ; pin_out          ;
+; |IMEM|dout[17]                                                                                   ; |IMEM|dout[17]                                                                             ; pin_out          ;
+; |IMEM|dout[16]                                                                                   ; |IMEM|dout[16]                                                                             ; pin_out          ;
+; |IMEM|dout[15]                                                                                   ; |IMEM|dout[15]                                                                             ; pin_out          ;
+; |IMEM|dout[14]                                                                                   ; |IMEM|dout[14]                                                                             ; pin_out          ;
+; |IMEM|dout[13]                                                                                   ; |IMEM|dout[13]                                                                             ; pin_out          ;
+; |IMEM|dout[12]                                                                                   ; |IMEM|dout[12]                                                                             ; pin_out          ;
+; |IMEM|dout[11]                                                                                   ; |IMEM|dout[11]                                                                             ; pin_out          ;
+; |IMEM|dout[10]                                                                                   ; |IMEM|dout[10]                                                                             ; pin_out          ;
+; |IMEM|dout[9]                                                                                    ; |IMEM|dout[9]                                                                              ; pin_out          ;
+; |IMEM|dout[8]                                                                                    ; |IMEM|dout[8]                                                                              ; pin_out          ;
+; |IMEM|dout[7]                                                                                    ; |IMEM|dout[7]                                                                              ; pin_out          ;
+; |IMEM|dout[6]                                                                                    ; |IMEM|dout[6]                                                                              ; pin_out          ;
+; |IMEM|dout[5]                                                                                    ; |IMEM|dout[5]                                                                              ; pin_out          ;
+; |IMEM|dout[4]                                                                                    ; |IMEM|dout[4]                                                                              ; pin_out          ;
+; |IMEM|dout[3]                                                                                    ; |IMEM|dout[3]                                                                              ; pin_out          ;
+; |IMEM|addr[9]                                                                                    ; |IMEM|addr[9]                                                                              ; out              ;
+; |IMEM|addr[8]                                                                                    ; |IMEM|addr[8]                                                                              ; out              ;
+; |IMEM|addr[7]                                                                                    ; |IMEM|addr[7]                                                                              ; out              ;
+; |IMEM|addr[6]                                                                                    ; |IMEM|addr[6]                                                                              ; out              ;
+; |IMEM|addr[5]                                                                                    ; |IMEM|addr[5]                                                                              ; out              ;
+; |IMEM|addr[4]                                                                                    ; |IMEM|addr[4]                                                                              ; out              ;
+; |IMEM|addr[3]                                                                                    ; |IMEM|addr[3]                                                                              ; out              ;
+; |IMEM|addr[2]                                                                                    ; |IMEM|addr[2]                                                                              ; out              ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a3  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[3]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a4  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[4]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a5  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[5]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a6  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[6]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a7  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[7]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a8  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[8]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a9  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[9]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a10 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[10] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a11 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[11] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a12 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[12] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a13 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[13] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a14 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[14] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a15 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[15] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a16 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[16] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a17 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[17] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a18 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[18] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a19 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[19] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a20 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[20] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a21 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[21] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a22 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[22] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a23 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[23] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a24 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[24] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a25 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[25] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a26 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[26] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a27 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[27] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a28 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[28] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a29 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[29] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a30 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[30] ; portadataout0    ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                         ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                        ; Output Port Name                                                                           ; Output Port Type ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+; |IMEM|dout[30]                                                                                   ; |IMEM|dout[30]                                                                             ; pin_out          ;
+; |IMEM|dout[29]                                                                                   ; |IMEM|dout[29]                                                                             ; pin_out          ;
+; |IMEM|dout[28]                                                                                   ; |IMEM|dout[28]                                                                             ; pin_out          ;
+; |IMEM|dout[27]                                                                                   ; |IMEM|dout[27]                                                                             ; pin_out          ;
+; |IMEM|dout[26]                                                                                   ; |IMEM|dout[26]                                                                             ; pin_out          ;
+; |IMEM|dout[25]                                                                                   ; |IMEM|dout[25]                                                                             ; pin_out          ;
+; |IMEM|dout[24]                                                                                   ; |IMEM|dout[24]                                                                             ; pin_out          ;
+; |IMEM|dout[23]                                                                                   ; |IMEM|dout[23]                                                                             ; pin_out          ;
+; |IMEM|dout[22]                                                                                   ; |IMEM|dout[22]                                                                             ; pin_out          ;
+; |IMEM|dout[21]                                                                                   ; |IMEM|dout[21]                                                                             ; pin_out          ;
+; |IMEM|dout[20]                                                                                   ; |IMEM|dout[20]                                                                             ; pin_out          ;
+; |IMEM|dout[19]                                                                                   ; |IMEM|dout[19]                                                                             ; pin_out          ;
+; |IMEM|dout[18]                                                                                   ; |IMEM|dout[18]                                                                             ; pin_out          ;
+; |IMEM|dout[17]                                                                                   ; |IMEM|dout[17]                                                                             ; pin_out          ;
+; |IMEM|dout[16]                                                                                   ; |IMEM|dout[16]                                                                             ; pin_out          ;
+; |IMEM|dout[15]                                                                                   ; |IMEM|dout[15]                                                                             ; pin_out          ;
+; |IMEM|dout[14]                                                                                   ; |IMEM|dout[14]                                                                             ; pin_out          ;
+; |IMEM|dout[13]                                                                                   ; |IMEM|dout[13]                                                                             ; pin_out          ;
+; |IMEM|dout[12]                                                                                   ; |IMEM|dout[12]                                                                             ; pin_out          ;
+; |IMEM|dout[11]                                                                                   ; |IMEM|dout[11]                                                                             ; pin_out          ;
+; |IMEM|dout[10]                                                                                   ; |IMEM|dout[10]                                                                             ; pin_out          ;
+; |IMEM|dout[9]                                                                                    ; |IMEM|dout[9]                                                                              ; pin_out          ;
+; |IMEM|dout[8]                                                                                    ; |IMEM|dout[8]                                                                              ; pin_out          ;
+; |IMEM|dout[7]                                                                                    ; |IMEM|dout[7]                                                                              ; pin_out          ;
+; |IMEM|dout[6]                                                                                    ; |IMEM|dout[6]                                                                              ; pin_out          ;
+; |IMEM|dout[5]                                                                                    ; |IMEM|dout[5]                                                                              ; pin_out          ;
+; |IMEM|dout[4]                                                                                    ; |IMEM|dout[4]                                                                              ; pin_out          ;
+; |IMEM|dout[3]                                                                                    ; |IMEM|dout[3]                                                                              ; pin_out          ;
+; |IMEM|addr[9]                                                                                    ; |IMEM|addr[9]                                                                              ; out              ;
+; |IMEM|addr[8]                                                                                    ; |IMEM|addr[8]                                                                              ; out              ;
+; |IMEM|addr[7]                                                                                    ; |IMEM|addr[7]                                                                              ; out              ;
+; |IMEM|addr[6]                                                                                    ; |IMEM|addr[6]                                                                              ; out              ;
+; |IMEM|addr[5]                                                                                    ; |IMEM|addr[5]                                                                              ; out              ;
+; |IMEM|addr[4]                                                                                    ; |IMEM|addr[4]                                                                              ; out              ;
+; |IMEM|addr[3]                                                                                    ; |IMEM|addr[3]                                                                              ; out              ;
+; |IMEM|addr[2]                                                                                    ; |IMEM|addr[2]                                                                              ; out              ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a3  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[3]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a4  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[4]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a5  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[5]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a6  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[6]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a7  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[7]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a8  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[8]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a9  ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[9]  ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a10 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[10] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a11 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[11] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a12 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[12] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a13 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[13] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a14 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[14] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a15 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[15] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a16 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[16] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a17 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[17] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a18 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[18] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a19 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[19] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a20 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[20] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a21 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[21] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a22 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[22] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a23 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[23] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a24 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[24] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a25 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[25] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a26 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[26] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a27 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[27] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a28 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[28] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a29 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[29] ; portadataout0    ;
+; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|ram_block1a30 ; |IMEM|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_kq91:auto_generated|q_a[30] ; portadataout0    ;
++--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Aug 22 09:58:17 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off BIU_MEM -c BIU_MEM
+Info: Using vector source file "D:/09017231毛泊涵/计组实验/BIU_MEM/IMEM_TEST.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      14.67 %
+Info: Number of transitions in simulation is 225
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 186 megabytes
+    Info: Processing ended: Thu Aug 22 09:58:18 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
