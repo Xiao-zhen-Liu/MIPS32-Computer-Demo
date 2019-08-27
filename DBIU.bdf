@@ -119,22 +119,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 696 176 872 192)
-	(text "OUTPUT" (rect 1 0 51 13)(font "Arial" (font_size 6)))
-	(text "ABus[29..0]" (rect 90 0 163 15)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8)(line_width 1))
-		(line (pt 52 4)(pt 78 4)(line_width 1))
-		(line (pt 52 12)(pt 78 12)(line_width 1))
-		(line (pt 52 12)(pt 52 4)(line_width 1))
-		(line (pt 78 4)(pt 82 8)(line_width 1))
-		(line (pt 82 8)(pt 78 12)(line_width 1))
-		(line (pt 78 12)(pt 82 8)(line_width 1))
-	)
-)
-(pin
-	(output)
 	(rect 696 200 888 216)
 	(text "OUTPUT" (rect 1 0 51 13)(font "Arial" (font_size 6)))
 	(text "DBusOut[31..0]" (rect 90 0 187 15)(font "Arial" ))
@@ -214,6 +198,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
+(pin
+	(output)
+	(rect 696 176 872 192)
+	(text "OUTPUT" (rect 1 0 51 13)(font "Arial" (font_size 6)))
+	(text "ABus[31..0]" (rect 90 0 163 15)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 544 240 608 288)
 	(text "XOR" (rect 1 0 26 13)(font "Arial" (font_size 6)))
@@ -278,12 +278,6 @@ applicable agreement for further details.
 	(pt 696 312)
 )
 (connector
-	(text "Addr[31..2]" (rect 624 168 692 183)(font "Arial" ))
-	(pt 696 184)
-	(pt 584 184)
-	(bus)
-)
-(connector
 	(pt 696 208)
 	(pt 456 208)
 	(bus)
@@ -340,5 +334,11 @@ applicable agreement for further details.
 (connector
 	(pt 640 264)
 	(pt 608 264)
+)
+(connector
+	(text "<<__$DEF_ALIAS1406>>" (rect 624 168 789 183)(font "Arial" )(invisible))
+	(pt 456 184)
+	(pt 696 184)
+	(bus)
 )
 (junction (pt 504 264))

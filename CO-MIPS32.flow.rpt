@@ -1,5 +1,5 @@
 Flow report for CO-MIPS32
-Thu Aug 22 11:35:38 2019
+Tue Aug 27 22:54:36 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,19 +38,19 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Thu Aug 22 11:35:29 2019        ;
+; Flow Status                        ; Successful - Tue Aug 27 22:54:21 2019        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; CO-MIPS32                                    ;
-; Top-level Entity Name              ; DataPath                                     ;
+; Top-level Entity Name              ; DP_test                                      ;
 ; Family                             ; Cyclone III                                  ;
-; Device                             ; EP3C16Q240C8                                 ;
+; Device                             ; EP3C16U484C6                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; N/A                                          ;
-; Total logic elements               ; 2,133 / 15,408 ( 14 % )                      ;
-;     Total combinational functions  ; 1,986 / 15,408 ( 13 % )                      ;
-;     Dedicated logic registers      ; 993 / 15,408 ( 6 % )                         ;
-; Total registers                    ; 993                                          ;
-; Total pins                         ; 47 / 161 ( 29 % )                            ;
+; Total logic elements               ; 2,201 / 15,408 ( 14 % )                      ;
+;     Total combinational functions  ; 2,070 / 15,408 ( 13 % )                      ;
+;     Dedicated logic registers      ; 1,022 / 15,408 ( 7 % )                       ;
+; Total registers                    ; 1022                                         ;
+; Total pins                         ; 178 / 347 ( 51 % )                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 65,536 / 516,096 ( 13 % )                    ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                              ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/22/2019 11:34:52 ;
+; Start date & time ; 08/27/2019 22:53:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CO-MIPS32           ;
 +-------------------+---------------------+
@@ -74,12 +74,13 @@ applicable agreement for further details.
 +------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 66325069920098.156644489220268         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 66325069920098.156691761903944         ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                             ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_ADD_SUB                            ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MUX                                ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_OR                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MUX                                ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                             ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_OR                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_CLSHIFT                            ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MUX                                ; --            ; --          ; --             ;
@@ -91,6 +92,11 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_AND                                ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_OR                                 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                                 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_OR                                 ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                    ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                                    ; --            ; --          ; --             ;
@@ -124,6 +130,9 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_mux_compare.tdf                    ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_mux_compare.bsf                    ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_mux_compare.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode_id_func.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode_id_func.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode_id_func.inc                 ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_or0.tdf                            ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_or0.bsf                            ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_or0.inc                            ; --            ; --          ; --             ;
@@ -157,10 +166,16 @@ applicable agreement for further details.
 ; MISC_FILE                          ; PC.tdf                                 ; --            ; --          ; --             ;
 ; MISC_FILE                          ; PC.bsf                                 ; --            ; --          ; --             ;
 ; MISC_FILE                          ; PC.inc                                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode_id_op.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode_id_op.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode_id_op.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or_id.tdf                          ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or_id.bsf                          ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_or_id.inc                          ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                                   ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                               ; --            ; DataPath    ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                                 ; --            ; DataPath    ; Top            ;
-; TOP_LEVEL_ENTITY                   ; DataPath                               ; CO-MIPS32     ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                               ; --            ; DP_test     ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                                 ; --            ; DP_test     ; Top            ;
+; TOP_LEVEL_ENTITY                   ; DP_test                                ; CO-MIPS32     ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                    ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
@@ -170,11 +185,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 277 MB              ; 00:00:23                           ;
-; Fitter                    ; 00:00:11     ; 1.0                     ; 307 MB              ; 00:00:13                           ;
-; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 274 MB              ; 00:00:10                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 244 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:44     ; --                      ; --                  ; 00:00:46                           ;
+; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 279 MB              ; 00:00:27                           ;
+; Fitter                    ; 00:00:14     ; 1.0                     ; 308 MB              ; 00:00:16                           ;
+; TimeQuest Timing Analyzer ; 00:00:17     ; 1.0                     ; 325 MB              ; 00:00:17                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 245 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:54     ; --                      ; --                  ; 00:01:00                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

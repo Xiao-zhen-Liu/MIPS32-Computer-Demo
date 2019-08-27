@@ -68,8 +68,8 @@ applicable agreement for further details.
 	(port
 		(pt 256 32)
 		(output)
-		(text "ABus[29..0]" (rect 0 0 81 16)(font "Arial" (font_size 8)))
-		(text "ABus[29..0]" (rect 154 27 235 43)(font "Arial" (font_size 8)))
+		(text "ABus[31..0]" (rect 0 0 81 16)(font "Arial" (font_size 8)))
+		(text "ABus[31..0]" (rect 154 27 235 43)(font "Arial" (font_size 8)))
 		(line (pt 256 32)(pt 240 32)(line_width 3))
 	)
 	(port
