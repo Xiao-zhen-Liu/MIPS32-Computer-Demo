@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16U484C6
-set_global_assignment -name TOP_LEVEL_ENTITY DP_test
+set_global_assignment -name TOP_LEVEL_ENTITY "CO-MIPS32"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:36:40  AUGUST 20, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -46,9 +46,12 @@ set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id e
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name LL_ROOT_REGION ON -entity "CO-MIPS32" -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -entity "CO-MIPS32" -section_id "Root Region"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name BDF_FILE CU.bdf
+set_global_assignment -name BDF_FILE TSG.bdf
+set_global_assignment -name BDF_FILE uOPGen.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE test_Datapath.vwf
 set_global_assignment -name BDF_FILE DP_test.bdf
 set_global_assignment -name BDF_FILE ID.bdf
@@ -64,17 +67,16 @@ set_global_assignment -name BDF_FILE ACU.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ACU.vwf
 set_global_assignment -name BDF_FILE ExtU.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ExtU.vwf
+set_global_assignment -name AHDL_FILE lpm_clshift_arithmetic_32bit_right.tdf
 set_global_assignment -name AHDL_FILE lpm_or0.tdf
 set_global_assignment -name QIP_FILE lpm_decode0.qip
 set_global_assignment -name AHDL_FILE lpm_add_sub0.tdf
+set_global_assignment -name AHDL_FILE lpm_and1.tdf
 set_global_assignment -name AHDL_FILE lpm_add_sub1.tdf
 set_global_assignment -name AHDL_FILE lpm_add_sub2.tdf
 set_global_assignment -name AHDL_FILE lpm_decode1.tdf
-set_global_assignment -name AHDL_FILE lpm_clshift_arithmetic_32bit_right.tdf
 set_global_assignment -name AHDL_FILE lpm_and0.tdf
 set_global_assignment -name AHDL_FILE lpm_decode0.tdf
-set_global_assignment -name AHDL_FILE lpm_and1.tdf
-set_global_assignment -name BDF_FILE CU.bdf
 set_global_assignment -name BDF_FILE add_sub.bdf
 set_global_assignment -name AHDL_FILE lpm_dff1.tdf
 set_global_assignment -name AHDL_FILE lpm_mux_alu_out.tdf
@@ -104,9 +106,11 @@ set_global_assignment -name QIP_FILE PC.qip
 set_global_assignment -name QIP_FILE lpm_decode_id_op.qip
 set_global_assignment -name QIP_FILE lpm_or_id.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE test_ID.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE "CO-MIPS32.bdf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE "CO-MIPS32.vwf"
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE test_Datapath.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "CO-MIPS32.vwf"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

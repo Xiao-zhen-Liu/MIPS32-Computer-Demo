@@ -2,76 +2,40 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'P1'
-Slack : -17.888
-TNS   : -740.460
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -17.131
+TNS   : -16111.800
 
-Type  : Slow 1200mV 85C Model Setup 'P0'
-Slack : -16.845
-TNS   : -15634.594
-
-Type  : Slow 1200mV 85C Model Hold 'P0'
-Slack : 0.494
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 1.209
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'P1'
-Slack : 1.080
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -1059.784
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -15.258
+TNS   : -14343.331
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 1.093
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'P0'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1003.696
+TNS   : -1059.784
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'P1'
-Slack : -3.000
-TNS   : -59.088
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -9.418
+TNS   : -8838.348
 
-Type  : Slow 1200mV 0C Model Setup 'P1'
-Slack : -16.023
-TNS   : -662.236
-
-Type  : Slow 1200mV 0C Model Setup 'P0'
-Slack : -15.109
-TNS   : -13873.022
-
-Type  : Slow 1200mV 0C Model Hold 'P0'
-Slack : 0.468
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.624
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'P1'
-Slack : 0.968
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'P0'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1003.696
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'P1'
-Slack : -3.000
-TNS   : -59.088
-
-Type  : Fast 1200mV 0C Model Setup 'P1'
-Slack : -9.823
-TNS   : -405.703
-
-Type  : Fast 1200mV 0C Model Setup 'P0'
-Slack : -9.270
-TNS   : -8484.089
-
-Type  : Fast 1200mV 0C Model Hold 'P0'
-Slack : 0.228
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'P1'
-Slack : 0.573
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'P0'
-Slack : -3.000
-TNS   : -1056.031
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'P1'
-Slack : -3.000
-TNS   : -48.175
+TNS   : -1041.340
 
 ------------------------------------------------------------
