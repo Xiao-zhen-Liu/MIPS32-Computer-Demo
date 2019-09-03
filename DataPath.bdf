@@ -233,7 +233,7 @@ applicable agreement for further details.
 	(input)
 	(rect 336 736 504 752)
 	(text "INPUT" (rect 133 0 169 13)(font "Arial" (font_size 6)))
-	(text "BrEq" (rect 5 0 36 15)(font "Arial" ))
+	(text "BrEq" (rect 9 0 40 15)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -249,7 +249,7 @@ applicable agreement for further details.
 	(input)
 	(rect 336 784 504 800)
 	(text "INPUT" (rect 133 0 169 13)(font "Arial" (font_size 6)))
-	(text "Jump" (rect 5 0 41 15)(font "Arial" ))
+	(text "Jump" (rect 9 0 45 15)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -265,7 +265,7 @@ applicable agreement for further details.
 	(input)
 	(rect 336 768 504 784)
 	(text "INPUT" (rect 133 0 169 13)(font "Arial" (font_size 6)))
-	(text "BrNe" (rect 5 0 38 15)(font "Arial" ))
+	(text "BrNe" (rect 9 0 42 15)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))

@@ -14,7 +14,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|DP_test|DataPath:inst|ALU:inst1|lpm_decode0:inst2|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_5af.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DP_test|DataPath:inst|ALU:inst1|lpm_mux_compare:inst11|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_irc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DP_test|DataPath:inst|lpm_mux2:inst9|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_2qc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DP_test|DMEM:inst2|lpm_ram_dq0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_41h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DP_test|DMEM:inst2|lpm_ram_dq0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5si1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DP_test|DataPath:inst|ALU:inst1|lpm_mux_alu_out:inst9|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_lrc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DP_test|DataPath:inst|GPRs:inst|lpm_mux0:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_9tc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DP_test|DataPath:inst|lpm_mux1:inst7|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_irc.tdf"/>

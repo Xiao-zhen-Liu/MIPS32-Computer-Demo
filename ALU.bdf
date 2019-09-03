@@ -576,31 +576,6 @@ applicable agreement for further details.
 	(flipy_rotate90)
 )
 (symbol
-	(rect 424 56 456 104)
-	(text "WIRE" (rect 0 17 13 47)(font "Arial" (font_size 6))(vertical))
-	(text "inst16" (rect 21 5 36 45)(font "Arial" )(vertical))
-	(port
-		(pt 16 48)
-		(input)
-		(text "IN" (rect 2 7 18 23)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 7 30 23 46)(font "Courier New" (bold))(vertical)(invisible))
-		(line (pt 16 48)(pt 16 34)(line_width 1))
-	)
-	(port
-		(pt 16 0)
-		(output)
-		(text "OUT" (rect 32 7 56 23)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 7 -8 23 16)(font "Courier New" (bold))(vertical)(invisible))
-		(line (pt 16 16)(pt 16 0)(line_width 1))
-	)
-	(drawing
-		(line (pt 7 34)(pt 16 16)(line_width 1))
-		(line (pt 25 34)(pt 7 34)(line_width 1))
-		(line (pt 25 34)(pt 16 16)(line_width 1))
-	)
-	(rotate90)
-)
-(symbol
 	(rect 984 -88 1048 -40)
 	(text "OR2" (rect 1 0 25 13)(font "Arial" (font_size 6)))
 	(text "inst17" (rect 3 37 43 52)(font "Arial" ))
@@ -971,23 +946,6 @@ applicable agreement for further details.
 	(pt 592 -8)
 )
 (connector
-	(text "data1x[31..0]" (rect 409 120 490 135)(font "Arial" ))
-	(pt 504 136)
-	(pt 384 136)
-	(bus)
-)
-(connector
-	(pt 440 56)
-	(pt 440 24)
-	(bus)
-)
-(connector
-	(text "data1x[31..1]" (rect 437 8 518 23)(font "Arial" ))
-	(pt 440 24)
-	(pt 488 24)
-	(bus)
-)
-(connector
 	(pt 984 -72)
 	(pt 888 -72)
 )
@@ -1030,7 +988,6 @@ applicable agreement for further details.
 	(pt 1096 -48)
 )
 (connector
-	(text "<<__$DEF_ALIAS297>>" (rect 1304 -72 1460 -57)(font "Arial" )(invisible))
 	(pt 1272 -56)
 	(pt 1400 -56)
 )
@@ -1115,21 +1072,6 @@ applicable agreement for further details.
 	(pt 1184 -400)
 )
 (connector
-	(pt 368 120)
-	(pt 440 120)
-	(bus)
-)
-(connector
-	(pt 440 120)
-	(pt 504 120)
-	(bus)
-)
-(connector
-	(text "data1x[0]" (rect 400 152 457 167)(font "Arial" ))
-	(pt 360 168)
-	(pt 488 168)
-)
-(connector
 	(pt 976 -392)
 	(pt 848 -392)
 )
@@ -1175,11 +1117,6 @@ applicable agreement for further details.
 	(pt 656 8)
 )
 (connector
-	(pt 440 104)
-	(pt 440 120)
-	(bus)
-)
-(connector
 	(pt 1160 280)
 	(pt 1240 280)
 	(bus)
@@ -1191,25 +1128,45 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[31..0]" (rect 464 288 511 303)(font "Arial" ))
+	(pt 776 304)
+	(pt 984 304)
+	(bus)
+)
+(connector
+	(pt 368 120)
+	(pt 504 120)
+	(bus)
+)
+(connector
+	(pt 376 136)
+	(pt 376 168)
+	(bus)
+)
+(connector
+	(pt 376 168)
+	(pt 360 168)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS331>>" (rect 409 120 565 135)(font "Arial" )(invisible))
+	(pt 376 136)
+	(pt 504 136)
+	(bus)
+)
+(connector
+	(text "B[31..0]" (rect 464 288 512 303)(font "Arial" ))
 	(pt 440 304)
 	(pt 560 304)
 	(bus)
 )
 (connector
-	(text "B[4..0]" (rect 472 304 512 319)(font "Arial" ))
+	(text "A[4..0]" (rect 472 304 510 319)(font "Arial" ))
 	(pt 440 320)
 	(pt 560 320)
-	(bus)
-)
-(connector
-	(pt 776 304)
-	(pt 984 304)
 	(bus)
 )
 (junction (pt 120 280))
 (junction (pt 168 264))
 (junction (pt 848 -192))
 (junction (pt 640 -184))
-(junction (pt 440 120))
 (junction (pt 656 -208))
