@@ -1,0 +1,5 @@
+6:CLK
+5:WRN
+4:DMEMEnN
+3..0:DM[3..0]
+ICBUS[1..0]  [0]=ICLKO [1]=IMEMRdEnN

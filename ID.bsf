@@ -1,0 +1,183 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 64 64 248 416)
+	(text "ID" (rect 5 0 19 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 24 328 47 343)(font "Arial" ))
+	(port
+		(pt 0 168)
+		(input)
+		(text "IW[31..0]" (rect 0 0 62 16)(font "Arial" (font_size 8)))
+		(text "IW[31..0]" (rect 21 163 83 179)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 16 168)(line_width 3))
+	)
+	(port
+		(pt 56 0)
+		(output)
+		(text "jump" (rect 0 0 33 16)(font "Arial" (font_size 8)))
+		(text "jump" (rect 48 24 64 57)(font "Arial" (font_size 8))(vertical))
+		(line (pt 56 0)(pt 56 16)(line_width 1))
+	)
+	(port
+		(pt 88 0)
+		(output)
+		(text "BrEq" (rect 0 0 34 16)(font "Arial" (font_size 8)))
+		(text "BrEq" (rect 80 24 96 58)(font "Arial" (font_size 8))(vertical))
+		(line (pt 88 0)(pt 88 16)(line_width 1))
+	)
+	(port
+		(pt 120 0)
+		(output)
+		(text "BrNe" (rect 0 0 34 16)(font "Arial" (font_size 8)))
+		(text "BrNe" (rect 112 24 128 58)(font "Arial" (font_size 8))(vertical))
+		(line (pt 120 0)(pt 120 16)(line_width 1))
+	)
+	(port
+		(pt 184 40)
+		(output)
+		(text "srav" (rect 0 0 27 16)(font "Arial" (font_size 8)))
+		(text "srav" (rect 136 35 163 51)(font "Arial" (font_size 8)))
+		(line (pt 184 40)(pt 168 40)(line_width 1))
+	)
+	(port
+		(pt 184 56)
+		(output)
+		(text "add" (rect 0 0 24 16)(font "Arial" (font_size 8)))
+		(text "add" (rect 139 51 163 67)(font "Arial" (font_size 8)))
+		(line (pt 184 56)(pt 168 56)(line_width 1))
+	)
+	(port
+		(pt 184 72)
+		(output)
+		(text "addu" (rect 0 0 33 16)(font "Arial" (font_size 8)))
+		(text "addu" (rect 130 67 163 83)(font "Arial" (font_size 8)))
+		(line (pt 184 72)(pt 168 72)(line_width 1))
+	)
+	(port
+		(pt 184 88)
+		(output)
+		(text "sub" (rect 0 0 24 16)(font "Arial" (font_size 8)))
+		(text "sub" (rect 139 83 163 99)(font "Arial" (font_size 8)))
+		(line (pt 184 88)(pt 168 88)(line_width 1))
+	)
+	(port
+		(pt 184 104)
+		(output)
+		(text "subu" (rect 0 0 33 16)(font "Arial" (font_size 8)))
+		(text "subu" (rect 130 99 163 115)(font "Arial" (font_size 8)))
+		(line (pt 184 104)(pt 168 104)(line_width 1))
+	)
+	(port
+		(pt 184 120)
+		(output)
+		(text "or" (rect 0 0 12 16)(font "Arial" (font_size 8)))
+		(text "or" (rect 151 115 163 131)(font "Arial" (font_size 8)))
+		(line (pt 184 120)(pt 168 120)(line_width 1))
+	)
+	(port
+		(pt 184 136)
+		(output)
+		(text "slt" (rect 0 0 16 16)(font "Arial" (font_size 8)))
+		(text "slt" (rect 147 131 163 147)(font "Arial" (font_size 8)))
+		(line (pt 184 136)(pt 168 136)(line_width 1))
+	)
+	(port
+		(pt 184 152)
+		(output)
+		(text "sltu" (rect 0 0 24 16)(font "Arial" (font_size 8)))
+		(text "sltu" (rect 139 147 163 163)(font "Arial" (font_size 8)))
+		(line (pt 184 152)(pt 168 152)(line_width 1))
+	)
+	(port
+		(pt 184 232)
+		(output)
+		(text "j" (rect 0 0 3 16)(font "Arial" (font_size 8)))
+		(text "j" (rect 160 227 163 243)(font "Arial" (font_size 8)))
+		(line (pt 184 232)(pt 168 232)(line_width 1))
+	)
+	(port
+		(pt 184 248)
+		(output)
+		(text "beq" (rect 0 0 24 16)(font "Arial" (font_size 8)))
+		(text "beq" (rect 139 243 163 259)(font "Arial" (font_size 8)))
+		(line (pt 184 248)(pt 168 248)(line_width 1))
+	)
+	(port
+		(pt 184 264)
+		(output)
+		(text "bne" (rect 0 0 24 16)(font "Arial" (font_size 8)))
+		(text "bne" (rect 139 259 163 275)(font "Arial" (font_size 8)))
+		(line (pt 184 264)(pt 168 264)(line_width 1))
+	)
+	(port
+		(pt 184 168)
+		(output)
+		(text "addi" (rect 0 0 28 16)(font "Arial" (font_size 8)))
+		(text "addi" (rect 135 163 163 179)(font "Arial" (font_size 8)))
+		(line (pt 184 168)(pt 168 168)(line_width 1))
+	)
+	(port
+		(pt 184 184)
+		(output)
+		(text "ori" (rect 0 0 16 16)(font "Arial" (font_size 8)))
+		(text "ori" (rect 147 179 163 195)(font "Arial" (font_size 8)))
+		(line (pt 184 184)(pt 168 184)(line_width 1))
+	)
+	(port
+		(pt 184 280)
+		(output)
+		(text "lb" (rect 0 0 11 16)(font "Arial" (font_size 8)))
+		(text "lb" (rect 152 275 163 291)(font "Arial" (font_size 8)))
+		(line (pt 184 280)(pt 168 280)(line_width 1))
+	)
+	(port
+		(pt 184 200)
+		(output)
+		(text "lw" (rect 0 0 14 16)(font "Arial" (font_size 8)))
+		(text "lw" (rect 149 195 163 211)(font "Arial" (font_size 8)))
+		(line (pt 184 200)(pt 168 200)(line_width 1))
+	)
+	(port
+		(pt 184 296)
+		(output)
+		(text "sb" (rect 0 0 16 16)(font "Arial" (font_size 8)))
+		(text "sb" (rect 147 291 163 307)(font "Arial" (font_size 8)))
+		(line (pt 184 296)(pt 168 296)(line_width 1))
+	)
+	(port
+		(pt 184 216)
+		(output)
+		(text "sw" (rect 0 0 18 16)(font "Arial" (font_size 8)))
+		(text "sw" (rect 145 211 163 227)(font "Arial" (font_size 8)))
+		(line (pt 184 216)(pt 168 216)(line_width 1))
+	)
+	(port
+		(pt 184 328)
+		(output)
+		(text "nop" (rect 0 0 24 16)(font "Arial" (font_size 8)))
+		(text "nop" (rect 139 323 163 339)(font "Arial" (font_size 8)))
+		(line (pt 184 328)(pt 168 328)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 352)(line_width 1))
+	)
+)
