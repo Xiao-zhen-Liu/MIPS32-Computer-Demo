@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 224 176)
+	(rect 64 64 272 224)
 	(text "GPRs" (rect 5 0 46 16)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 141 31 156)(font "Arial" ))
 	(port
@@ -73,18 +73,18 @@ applicable agreement for further details.
 		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
-		(pt 208 32)
+		(pt 208 56)
 		(output)
 		(text "RAQ[31..0]" (rect 0 0 76 16)(font "Arial" (font_size 8)))
-		(text "RAQ[31..0]" (rect 111 27 187 43)(font "Arial" (font_size 8)))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
+		(text "RAQ[31..0]" (rect 111 51 187 67)(font "Arial" (font_size 8)))
+		(line (pt 208 56)(pt 192 56)(line_width 3))
 	)
 	(port
-		(pt 208 48)
+		(pt 208 104)
 		(output)
 		(text "RBQ[31..0]" (rect 0 0 76 16)(font "Arial" (font_size 8)))
-		(text "RBQ[31..0]" (rect 111 43 187 59)(font "Arial" (font_size 8)))
-		(line (pt 208 48)(pt 192 48)(line_width 3))
+		(text "RBQ[31..0]" (rect 111 99 187 115)(font "Arial" (font_size 8)))
+		(line (pt 208 104)(pt 192 104)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 192 144)(line_width 1))

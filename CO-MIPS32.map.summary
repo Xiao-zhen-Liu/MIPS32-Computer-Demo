@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Sep 05 20:44:29 2019
+Analysis & Synthesis Status : Successful - Sun Sep 22 18:08:16 2019
 Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
 Revision Name : CO-MIPS32
 Top-level Entity Name : DP_test
 Family : Cyclone III
-Total logic elements : 3,151
-    Total combinational functions : 2,191
-    Dedicated logic registers : 1,022
-Total registers : 1022
-Total pins : 211
+Total logic elements : 3,157
+    Total combinational functions : 2,170
+    Dedicated logic registers : 1,146
+Total registers : 1146
+Total pins : 227
 Total virtual pins : 0
 Total memory bits : 65,536
 Embedded Multiplier 9-bit elements : 0

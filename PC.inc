@@ -17,7 +17,8 @@ FUNCTION PC
 (
 	aclr,
 	clock,
-	data[31..0]
+	data[31..0],
+	enable
 )
 
 RETURNS (
