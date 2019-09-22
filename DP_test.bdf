@@ -376,7 +376,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1032 168 1241 184)
+	(rect 1032 168 1208 184)
 	(text "OUTPUT" (rect 1 0 51 13)(font "Arial" (font_size 6)))
 	(text "RegWrData[31..0]" (rect 90 0 204 15)(font "Arial" ))
 	(pt 0 8)

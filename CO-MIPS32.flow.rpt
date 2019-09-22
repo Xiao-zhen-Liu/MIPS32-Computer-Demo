@@ -1,5 +1,5 @@
 Flow report for CO-MIPS32
-Thu Sep 05 20:45:21 2019
+Sun Sep 22 10:35:22 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,21 +38,21 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Thu Sep 05 20:44:57 2019        ;
+; Flow Status                        ; Successful - Sun Sep 22 10:35:20 2019        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; CO-MIPS32                                    ;
-; Top-level Entity Name              ; DP_test                                      ;
+; Top-level Entity Name              ; ACU                                          ;
 ; Family                             ; Cyclone III                                  ;
 ; Device                             ; EP3C16U484C6                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; N/A                                          ;
-; Total logic elements               ; 2,336 / 15,408 ( 15 % )                      ;
-;     Total combinational functions  ; 2,191 / 15,408 ( 14 % )                      ;
-;     Dedicated logic registers      ; 1,022 / 15,408 ( 7 % )                       ;
-; Total registers                    ; 1022                                         ;
-; Total pins                         ; 211 / 347 ( 61 % )                           ;
+; Total logic elements               ; 123 / 15,408 ( < 1 % )                       ;
+;     Total combinational functions  ; 123 / 15,408 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 0 / 15,408 ( 0 % )                           ;
+; Total registers                    ; 0                                            ;
+; Total pins                         ; 110 / 347 ( 32 % )                           ;
 ; Total virtual pins                 ; 0                                            ;
-; Total memory bits                  ; 65,536 / 516,096 ( 13 % )                    ;
+; Total memory bits                  ; 0 / 516,096 ( 0 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                ;
 +------------------------------------+----------------------------------------------+
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/05/2019 20:43:57 ;
+; Start date & time ; 09/22/2019 10:35:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CO-MIPS32           ;
 +-------------------+---------------------+
@@ -74,13 +74,18 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                         ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+-------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 1099350532837.156768743604680 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 1099350532837.156911970307592 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_AND                       ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                           ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                            ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and3.tdf                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and3.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and3.inc                  ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                          ; --            ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                      ; --            ; DP_test     ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                        ; --            ; DP_test     ; Top            ;
-; TOP_LEVEL_ENTITY                   ; DP_test                       ; CO-MIPS32     ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                      ; --            ; ACU         ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                        ; --            ; ACU         ; Top            ;
+; TOP_LEVEL_ENTITY                   ; ACU                           ; CO-MIPS32     ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                           ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+-------------------------------+---------------+-------------+----------------+
 
@@ -90,11 +95,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:33     ; 1.0                     ; 310 MB              ; 00:00:46                           ;
-; Fitter                    ; 00:00:22     ; 1.0                     ; 362 MB              ; 00:00:24                           ;
-; TimeQuest Timing Analyzer ; 00:00:26     ; 1.0                     ; 407 MB              ; 00:00:25                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 286 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:21     ; --                      ; --                  ; 00:01:35                           ;
+; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 274 MB              ; 00:00:05                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 343 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 308 MB              ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 281 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:14                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
