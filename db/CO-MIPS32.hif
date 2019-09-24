@@ -12555,8 +12555,8 @@ lpm_or.inc
 b3db57fced17f86f7678b84966053be
 }
 # hierarchies {
-lpm_or1:inst15
 lpm_or1:inst17
+lpm_or1:inst15
 }
 # macro_sequence
 
@@ -13156,6 +13156,9 @@ data0
 lpm_decode.inc
 10da69a8bbd590d66779e7a142f73790
 }
+# hierarchies {
+CU:inst5|ID:inst|lpm_decode_id_func:inst1
+}
 # macro_sequence
 
 # end
@@ -13383,6 +13386,9 @@ data1
 data0
 -1
 3
+}
+# hierarchies {
+CU:inst5|ID:inst|lpm_decode_id_func:inst1|lpm_decode:lpm_decode_component|decode_10g:auto_generated
 }
 # macro_sequence
 
@@ -13670,22 +13676,8 @@ data0
 -1
 3
 }
-# macro_sequence
-
-# end
-# entity
-TSG
-# storage
-db|CO-MIPS32.(76).cnf
-db|CO-MIPS32.(76).cnf
-# case_insensitive
-# source_file
-tsg.bdf
-6e2844b5b61ae2deba65a88b0149125
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+# hierarchies {
+CU:inst5|ID:inst|lpm_decode_id_op:inst|lpm_decode:lpm_decode_component|decode_qbf:auto_generated
 }
 # macro_sequence
 
@@ -15506,74 +15498,6 @@ DMEM:inst2|lpm_ram_dq0:inst|altsyncram:altsyncram_component|altsyncram_8si1:auto
 
 # end
 # entity
-CO-MIPS32
-# storage
-db|CO-MIPS32.(74).cnf
-db|CO-MIPS32.(74).cnf
-# case_insensitive
-# source_file
-co-mips32.bdf
-6c63eeab915144f16abe95ff25d4553a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-CU
-# storage
-db|CO-MIPS32.(75).cnf
-db|CO-MIPS32.(75).cnf
-# case_insensitive
-# source_file
-cu.bdf
-8db9ff076e5a25d5fe61eaf42a762
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-uOPGen
-# storage
-db|CO-MIPS32.(77).cnf
-db|CO-MIPS32.(77).cnf
-# case_insensitive
-# source_file
-uopgen.bdf
-5636cd96516e2dfd02859f9b897a5a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-ID
-# storage
-db|CO-MIPS32.(90).cnf
-db|CO-MIPS32.(90).cnf
-# case_insensitive
-# source_file
-id.bdf
-b6afd46d6b673cb31d69c690516967e0
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
 lpm_decode_id_op
 # storage
 db|CO-MIPS32.(97).cnf
@@ -15636,6 +15560,9 @@ data0
 # include_file {
 lpm_decode.inc
 10da69a8bbd590d66779e7a142f73790
+}
+# hierarchies {
+CU:inst5|ID:inst|lpm_decode_id_op:inst
 }
 # macro_sequence
 
@@ -15709,6 +15636,9 @@ data0
 # include_file {
 lpm_or.inc
 b3db57fced17f86f7678b84966053be
+}
+# hierarchies {
+CU:inst5|ID:inst|lpm_or_id:inst11
 }
 # macro_sequence
 
@@ -15863,26 +15793,6 @@ e6908ec75866e44ef1b19ff5dc7470
 }
 # hierarchies {
 IMEM:inst1|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_qja1:auto_generated
-}
-# macro_sequence
-
-# end
-# entity
-DataPath
-# storage
-db|CO-MIPS32.(0).cnf
-db|CO-MIPS32.(0).cnf
-# case_insensitive
-# source_file
-datapath.bdf
-f2d76b1b73275bcbfcb5f1b0762c461a
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-DataPath:inst
 }
 # macro_sequence
 
@@ -26501,26 +26411,6 @@ DataPath:inst|lpm_constant0:inst34|lpm_constant0_lpm_constant_v09:lpm_constant0_
 
 # end
 # entity
-DP_test
-# storage
-db|CO-MIPS32.(51).cnf
-db|CO-MIPS32.(51).cnf
-# case_insensitive
-# source_file
-dp_test.bdf
-d2d7f85f80fbc199641772e4b1fd34c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 altsyncram
 # storage
 db|CO-MIPS32.(101).cnf
@@ -27866,8 +27756,8 @@ data0_0
 3
 }
 # hierarchies {
-lpm_or1:inst15|lpm_or:lpm_or_component
 lpm_or1:inst17|lpm_or:lpm_or_component
+lpm_or1:inst15|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -28220,6 +28110,1225 @@ address_a0
 }
 # hierarchies {
 IMEM:inst1|lpm_rom0:inst|altsyncram:altsyncram_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or3
+# storage
+db|CO-MIPS32.(109).cnf
+db|CO-MIPS32.(109).cnf
+# case_insensitive
+# source_file
+lpm_or3.tdf
+b32d3697279a156d3a117e27fefa882
+7
+# used_port {
+result
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_or.inc
+b3db57fced17f86f7678b84966053be
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or3:inst23
+CU:inst5|uOPGen:inst4|lpm_or3:inst30
+CU:inst5|TSG:inst1|lpm_or3:inst25
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or
+# storage
+db|CO-MIPS32.(110).cnf
+db|CO-MIPS32.(110).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|lpm_or.tdf
+9d9b85358b57ebf2c2ba1d6b37aa4141
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+5
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data4_0
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or3:inst23|lpm_or:lpm_or_component
+CU:inst5|uOPGen:inst4|lpm_or3:inst30|lpm_or:lpm_or_component
+CU:inst5|TSG:inst1|lpm_or3:inst25|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or2
+# storage
+db|CO-MIPS32.(111).cnf
+db|CO-MIPS32.(111).cnf
+# case_insensitive
+# source_file
+lpm_or2.tdf
+8b4401ef29daff7bd3f375515be6dcf
+7
+# used_port {
+result
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_or.inc
+b3db57fced17f86f7678b84966053be
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or
+# storage
+db|CO-MIPS32.(112).cnf
+db|CO-MIPS32.(112).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|lpm_or.tdf
+9d9b85358b57ebf2c2ba1d6b37aa4141
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+7
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data6_0
+-1
+3
+data5_0
+-1
+3
+data4_0
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or5
+# storage
+db|CO-MIPS32.(113).cnf
+db|CO-MIPS32.(113).cnf
+# case_insensitive
+# source_file
+lpm_or5.tdf
+1b9d22dbfd8a252c619ca27fe1a6d8eb
+7
+# used_port {
+result
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_or.inc
+b3db57fced17f86f7678b84966053be
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or5:inst37
+CU:inst5|uOPGen:inst4|lpm_or5:inst29
+CU:inst5|uOPGen:inst4|lpm_or5:inst56
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or
+# storage
+db|CO-MIPS32.(114).cnf
+db|CO-MIPS32.(114).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|lpm_or.tdf
+9d9b85358b57ebf2c2ba1d6b37aa4141
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+6
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data5_0
+-1
+3
+data4_0
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or5:inst37|lpm_or:lpm_or_component
+CU:inst5|uOPGen:inst4|lpm_or5:inst29|lpm_or:lpm_or_component
+CU:inst5|uOPGen:inst4|lpm_or5:inst56|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or4
+# storage
+db|CO-MIPS32.(115).cnf
+db|CO-MIPS32.(115).cnf
+# case_insensitive
+# source_file
+lpm_or4.tdf
+4417eb3534d597e6fb4deb29c31e8b
+7
+# used_port {
+result
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_or.inc
+b3db57fced17f86f7678b84966053be
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or4:inst34
+CU:inst5|TSG:inst1|lpm_or4:inst17
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or
+# storage
+db|CO-MIPS32.(116).cnf
+db|CO-MIPS32.(116).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|lpm_or.tdf
+9d9b85358b57ebf2c2ba1d6b37aa4141
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+10
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data9_0
+-1
+3
+data8_0
+-1
+3
+data7_0
+-1
+3
+data6_0
+-1
+3
+data5_0
+-1
+3
+data4_0
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or4:inst34|lpm_or:lpm_or_component
+CU:inst5|TSG:inst1|lpm_or4:inst17|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+ID
+# storage
+db|CO-MIPS32.(75).cnf
+db|CO-MIPS32.(75).cnf
+# case_insensitive
+# source_file
+id.bdf
+c9434018fc6919ebc74387ebccef75
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst5|ID:inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|CO-MIPS32.(90).cnf
+db|CO-MIPS32.(90).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|lpm_decode.tdf
+801b50bb3ab97a9f41a27f6333e6c69e
+7
+# user_parameter {
+LPM_WIDTH
+6
+PARAMETER_UNKNOWN
+USR
+LPM_DECODES
+64
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_10g
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq7
+-1
+3
+eq43
+-1
+3
+eq42
+-1
+3
+eq37
+-1
+3
+eq35
+-1
+3
+eq34
+-1
+3
+eq33
+-1
+3
+eq32
+-1
+3
+enable
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CU:inst5|ID:inst|lpm_decode_id_func:inst1|lpm_decode:lpm_decode_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|CO-MIPS32.(117).cnf
+db|CO-MIPS32.(117).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|lpm_decode.tdf
+801b50bb3ab97a9f41a27f6333e6c69e
+7
+# user_parameter {
+LPM_WIDTH
+6
+PARAMETER_UNKNOWN
+USR
+LPM_DECODES
+64
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_qbf
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq8
+-1
+3
+eq5
+-1
+3
+eq43
+-1
+3
+eq40
+-1
+3
+eq4
+-1
+3
+eq35
+-1
+3
+eq32
+-1
+3
+eq2
+-1
+3
+eq13
+-1
+3
+eq0
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+CU:inst5|ID:inst|lpm_decode_id_op:inst|lpm_decode:lpm_decode_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or
+# storage
+db|CO-MIPS32.(118).cnf
+db|CO-MIPS32.(118).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|lpm_or.tdf
+9d9b85358b57ebf2c2ba1d6b37aa4141
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+17
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data9_0
+-1
+3
+data8_0
+-1
+3
+data7_0
+-1
+3
+data6_0
+-1
+3
+data5_0
+-1
+3
+data4_0
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data16_0
+-1
+3
+data15_0
+-1
+3
+data14_0
+-1
+3
+data13_0
+-1
+3
+data12_0
+-1
+3
+data11_0
+-1
+3
+data10_0
+-1
+3
+data0_0
+-1
+3
+}
+# hierarchies {
+CU:inst5|ID:inst|lpm_or_id:inst11|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+DataPath
+# storage
+db|CO-MIPS32.(51).cnf
+db|CO-MIPS32.(51).cnf
+# case_insensitive
+# source_file
+datapath.bdf
+5d2fecaacacd8cebc6668316aae61b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+DataPath:inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or7
+# storage
+db|CO-MIPS32.(119).cnf
+db|CO-MIPS32.(119).cnf
+# case_insensitive
+# source_file
+lpm_or7.tdf
+13b0823283982197686793ed4d167bf0
+7
+# used_port {
+result
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_or.inc
+b3db57fced17f86f7678b84966053be
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or7:inst3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or
+# storage
+db|CO-MIPS32.(120).cnf
+db|CO-MIPS32.(120).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|lpm_or.tdf
+9d9b85358b57ebf2c2ba1d6b37aa4141
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+4
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or7:inst3|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or8
+# storage
+db|CO-MIPS32.(121).cnf
+db|CO-MIPS32.(121).cnf
+# case_insensitive
+# source_file
+lpm_or8.tdf
+5ea338cc9fd8cc5447d4ada74af88f15
+7
+# used_port {
+result
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_or.inc
+b3db57fced17f86f7678b84966053be
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or8:inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_or
+# storage
+db|CO-MIPS32.(122).cnf
+db|CO-MIPS32.(122).cnf
+# case_insensitive
+# source_file
+|altera|91sp2|quartus|libraries|megafunctions|lpm_or.tdf
+9d9b85358b57ebf2c2ba1d6b37aa4141
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+8
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone III
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data7_0
+-1
+3
+data6_0
+-1
+3
+data5_0
+-1
+3
+data4_0
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4|lpm_or8:inst4|lpm_or:lpm_or_component
+}
+# macro_sequence
+
+# end
+# entity
+uOPGen
+# storage
+db|CO-MIPS32.(77).cnf
+db|CO-MIPS32.(77).cnf
+# case_insensitive
+# source_file
+uopgen.bdf
+80e1e301e4cf7e1db0a0e933c73e6c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst5|uOPGen:inst4
+}
+# macro_sequence
+
+# end
+# entity
+TSG
+# storage
+db|CO-MIPS32.(76).cnf
+db|CO-MIPS32.(76).cnf
+# case_insensitive
+# source_file
+tsg.bdf
+513a8bbe8fe2b12f64755b43d2139ee8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst5|TSG:inst1
+}
+# macro_sequence
+
+# end
+# entity
+CO-MIPS32
+# storage
+db|CO-MIPS32.(0).cnf
+db|CO-MIPS32.(0).cnf
+# case_insensitive
+# source_file
+co-mips32.bdf
+2d19c4568a54d45036c5b847e90
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+CU
+# storage
+db|CO-MIPS32.(74).cnf
+db|CO-MIPS32.(74).cnf
+# case_insensitive
+# source_file
+cu.bdf
+e8eaf26842cec3171b30dae57ad4f2da
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+CU:inst5
 }
 # macro_sequence
 

@@ -73,24 +73,24 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 GND                          : A1        : gnd    :                   :         :           :                
 VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
-DBusIn[3]                    : A3        : output : 2.5 V             :         : 8         : N              
-DCBus[4]                     : A4        : output : 2.5 V             :         : 8         : N              
+DBusIn[2]                    : A3        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
 DBusIn[1]                    : A5        : output : 2.5 V             :         : 8         : N              
-DABus[17]                    : A6        : output : 2.5 V             :         : 8         : N              
-DBusOut[28]                  : A7        : output : 2.5 V             :         : 8         : N              
-RegWrData[8]                 : A8        : output : 2.5 V             :         : 8         : N              
-DABus[27]                    : A9        : output : 2.5 V             :         : 8         : N              
-DBusIn[14]                   : A10       : output : 2.5 V             :         : 8         : N              
+RegWrData[30]                : A6        : output : 2.5 V             :         : 8         : N              
+DBusIn[19]                   : A7        : output : 2.5 V             :         : 8         : N              
+DBusOut[11]                  : A8        : output : 2.5 V             :         : 8         : N              
+RegWrData[10]                : A9        : output : 2.5 V             :         : 8         : N              
+RegWrData[2]                 : A10       : output : 2.5 V             :         : 8         : N              
 GND+                         : A11       :        :                   :         : 8         :                
 GND+                         : A12       :        :                   :         : 7         :                
-DBusIn[11]                   : A13       : output : 2.5 V             :         : 7         : N              
-IDBus[1]                     : A14       : output : 2.5 V             :         : 7         : N              
-ALUctr[0]                    : A15       : input  : 2.5 V             :         : 7         : N              
-ALUBsrc[1]                   : A16       : input  : 2.5 V             :         : 7         : N              
-RegWrData[27]                : A17       : output : 2.5 V             :         : 7         : N              
-IDBus[15]                    : A18       : output : 2.5 V             :         : 7         : N              
-DABus[2]                     : A19       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : A20       :        :                   :         : 7         :                
+ICBus[1]                     : A13       : output : 2.5 V             :         : 7         : N              
+DBusIn[0]                    : A14       : output : 2.5 V             :         : 7         : N              
+IDBus[10]                    : A15       : output : 2.5 V             :         : 7         : N              
+DABus[26]                    : A16       : output : 2.5 V             :         : 7         : N              
+DABus[24]                    : A17       : output : 2.5 V             :         : 7         : N              
+IDBus[14]                    : A18       : output : 2.5 V             :         : 7         : N              
+DABus[10]                    : A19       : output : 2.5 V             :         : 7         : N              
+IDBus[9]                     : A20       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A21       : power  :                   : 2.5V    : 7         :                
 GND                          : A22       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA1       :        :                   :         : 2         :                
@@ -99,205 +99,205 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AA3       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA4       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA5       :        :                   :         : 3         :                
 VCCIO3                       : AA6       : power  :                   : 2.5V    : 3         :                
-RegWrData[25]                : AA7       : output : 2.5 V             :         : 3         : N              
-RegWrData[13]                : AA8       : output : 2.5 V             :         : 3         : N              
-RegWrData[19]                : AA9       : output : 2.5 V             :         : 3         : N              
-RegWrData[2]                 : AA10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 3         :                
+RegWrData[7]                 : AA8       : output : 2.5 V             :         : 3         : N              
+IDBus[22]                    : AA9       : output : 2.5 V             :         : 3         : N              
+RegWrData[14]                : AA10      : output : 2.5 V             :         : 3         : N              
 GND+                         : AA11      :        :                   :         : 3         :                
 GND+                         : AA12      :        :                   :         : 4         :                
-DBusOut[8]                   : AA13      : output : 2.5 V             :         : 4         : N              
-DBusOut[27]                  : AA14      : output : 2.5 V             :         : 4         : N              
-IABus[12]                    : AA15      : output : 2.5 V             :         : 4         : N              
-IABus[15]                    : AA16      : output : 2.5 V             :         : 4         : N              
-ZF                           : AA17      : output : 2.5 V             :         : 4         : N              
-DBusIn[29]                   : AA18      : output : 2.5 V             :         : 4         : N              
-IDBus[5]                     : AA19      : output : 2.5 V             :         : 4         : N              
+DBusIn[26]                   : AA13      : output : 2.5 V             :         : 4         : N              
+DBusIn[13]                   : AA14      : output : 2.5 V             :         : 4         : N              
+IABus[30]                    : AA15      : output : 2.5 V             :         : 4         : N              
+IABus[13]                    : AA16      : output : 2.5 V             :         : 4         : N              
+IABus[21]                    : AA17      : output : 2.5 V             :         : 4         : N              
+DABus[13]                    : AA18      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA19      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA20      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
 GND                          : AB1       : gnd    :                   :         :           :                
 VCCIO3                       : AB2       : power  :                   : 2.5V    : 3         :                
-ICBus[1]                     : AB3       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB3       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 3         :                
-PCWrB                        : AB5       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 3         :                
 GND                          : AB6       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB7       :        :                   :         : 3         :                
-DCBus[1]                     : AB8       : output : 2.5 V             :         : 3         : N              
-RegWrData[7]                 : AB9       : output : 2.5 V             :         : 3         : N              
-DABus[14]                    : AB10      : output : 2.5 V             :         : 3         : N              
+DBusOut[26]                  : AB8       : output : 2.5 V             :         : 3         : N              
+RegWrData[17]                : AB9       : output : 2.5 V             :         : 3         : N              
+RegWrData[28]                : AB10      : output : 2.5 V             :         : 3         : N              
 GND+                         : AB11      :        :                   :         : 3         :                
 GND+                         : AB12      :        :                   :         : 4         :                
-DCBus[2]                     : AB13      : output : 2.5 V             :         : 4         : N              
-DBusIn[7]                    : AB14      : output : 2.5 V             :         : 4         : N              
-IABus[28]                    : AB15      : output : 2.5 V             :         : 4         : N              
-ALUBsrc[0]                   : AB16      : input  : 2.5 V             :         : 4         : N              
-IDBus[2]                     : AB17      : output : 2.5 V             :         : 4         : N              
-DABus[0]                     : AB18      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB19      :        :                   :         : 4         :                
+IDBus[21]                    : AB13      : output : 2.5 V             :         : 4         : N              
+DBusIn[11]                   : AB14      : output : 2.5 V             :         : 4         : N              
+IDBus[28]                    : AB15      : output : 2.5 V             :         : 4         : N              
+IABus[23]                    : AB16      : output : 2.5 V             :         : 4         : N              
+IABus[26]                    : AB17      : output : 2.5 V             :         : 4         : N              
+DABus[29]                    : AB18      : output : 2.5 V             :         : 4         : N              
+IABus[9]                     : AB19      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB20      :        :                   :         : 4         :                
 VCCIO4                       : AB21      : power  :                   : 2.5V    : 4         :                
 GND                          : AB22      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B1        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B2        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
-IDBus[22]                    : B4        : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : B5        :        :                   :         : 8         :                
-DBusIn[9]                    : B6        : output : 2.5 V             :         : 8         : N              
-IDBus[12]                    : B7        : output : 2.5 V             :         : 8         : N              
-IDBus[18]                    : B8        : output : 2.5 V             :         : 8         : N              
-RegWrData[10]                : B9        : output : 2.5 V             :         : 8         : N              
-DBusOut[16]                  : B10       : output : 2.5 V             :         : 8         : N              
+IABus[14]                    : B4        : output : 2.5 V             :         : 8         : N              
+DBusIn[30]                   : B5        : output : 2.5 V             :         : 8         : N              
+DBusOut[12]                  : B6        : output : 2.5 V             :         : 8         : N              
+DBusOut[22]                  : B7        : output : 2.5 V             :         : 8         : N              
+IDBus[17]                    : B8        : output : 2.5 V             :         : 8         : N              
+RegWrData[21]                : B9        : output : 2.5 V             :         : 8         : N              
+RegWrData[0]                 : B10       : output : 2.5 V             :         : 8         : N              
 GND+                         : B11       :        :                   :         : 8         :                
 GND+                         : B12       :        :                   :         : 7         :                
-DBusOut[13]                  : B13       : output : 2.5 V             :         : 7         : N              
-RegWrData[4]                 : B14       : output : 2.5 V             :         : 7         : N              
-DBusOut[1]                   : B15       : output : 2.5 V             :         : 7         : N              
-RegWrData[30]                : B16       : output : 2.5 V             :         : 7         : N              
-ALUOWr                       : B17       : input  : 2.5 V             :         : 7         : N              
-DBusIn[31]                   : B18       : output : 2.5 V             :         : 7         : N              
-IABus[0]                     : B19       : output : 2.5 V             :         : 7         : N              
-DABus[30]                    : B20       : output : 2.5 V             :         : 7         : N              
-DCBus[0]                     : B21       : output : 2.5 V             :         : 6         : N              
-DBusIn[25]                   : B22       : output : 2.5 V             :         : 6         : N              
+RegWrData[11]                : B13       : output : 2.5 V             :         : 7         : N              
+DCBus[4]                     : B14       : output : 2.5 V             :         : 7         : N              
+DABus[7]                     : B15       : output : 2.5 V             :         : 7         : N              
+DBusOut[14]                  : B16       : output : 2.5 V             :         : 7         : N              
+DBusIn[5]                    : B17       : output : 2.5 V             :         : 7         : N              
+DBusOut[19]                  : B18       : output : 2.5 V             :         : 7         : N              
+IABus[11]                    : B19       : output : 2.5 V             :         : 7         : N              
+DABus[2]                     : B20       : output : 2.5 V             :         : 7         : N              
+DBusOut[28]                  : B21       : output : 2.5 V             :         : 6         : N              
+DABus[0]                     : B22       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C1        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
-DBusOut[23]                  : C7        : output : 2.5 V             :         : 8         : N              
-DBusIn[8]                    : C8        : output : 2.5 V             :         : 8         : N              
+DBusIn[20]                   : C7        : output : 2.5 V             :         : 8         : N              
+DBusOut[21]                  : C8        : output : 2.5 V             :         : 8         : N              
 GND                          : C9        : gnd    :                   :         :           :                
-RegWrData[18]                : C10       : output : 2.5 V             :         : 8         : N              
+RegWrData[6]                 : C10       : output : 2.5 V             :         : 8         : N              
 GND                          : C11       : gnd    :                   :         :           :                
 GND                          : C12       : gnd    :                   :         :           :                
-DBusIn[23]                   : C13       : output : 2.5 V             :         : 7         : N              
+DBusIn[4]                    : C13       : output : 2.5 V             :         : 7         : N              
 GND                          : C14       : gnd    :                   :         :           :                
-RegWrData[29]                : C15       : output : 2.5 V             :         : 7         : N              
+DBusIn[27]                   : C15       : output : 2.5 V             :         : 7         : N              
 GND                          : C16       : gnd    :                   :         :           :                
-DBusOut[21]                  : C17       : output : 2.5 V             :         : 7         : N              
+DABus[15]                    : C17       : output : 2.5 V             :         : 7         : N              
 GND                          : C18       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 7         :                
+DABus[5]                     : C19       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C20       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 6         :                
-DBusOut[14]                  : C22       : output : 2.5 V             :         : 6         : N              
+DBusOut[29]                  : C21       : output : 2.5 V             :         : 6         : N              
+DBusIn[8]                    : C22       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D1        : input  : 2.5 V             :         : 1         : N              
-DABus[13]                    : D2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
 GND                          : D3        : gnd    :                   :         :           :                
 VCCIO1                       : D4        : power  :                   : 2.5V    : 1         :                
 VCCIO8                       : D5        : power  :                   : 2.5V    : 8         :                
-DABus[25]                    : D6        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
 GND                          : D7        : gnd    :                   :         :           :                
 GND                          : D8        : gnd    :                   :         :           :                
 VCCIO8                       : D9        : power  :                   : 2.5V    : 8         :                
-DBusIn[12]                   : D10       : output : 2.5 V             :         : 8         : N              
+DBusOut[16]                  : D10       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : D11       : power  :                   : 2.5V    : 8         :                
 VCCIO7                       : D12       : power  :                   : 2.5V    : 7         :                
-DBusOut[0]                   : D13       : output : 2.5 V             :         : 7         : N              
+DBusIn[31]                   : D13       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : D14       : power  :                   : 2.5V    : 7         :                
-DBusOut[12]                  : D15       : output : 2.5 V             :         : 7         : N              
+DCBus[3]                     : D15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : D16       : power  :                   : 2.5V    : 7         :                
-IABus[7]                     : D17       : output : 2.5 V             :         : 7         : N              
+ZF                           : D17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : D18       : power  :                   : 2.5V    : 7         :                
-IABus[16]                    : D19       : output : 2.5 V             :         : 7         : N              
+DABus[16]                    : D19       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 6         :                
-IABus[25]                    : D21       : output : 2.5 V             :         : 6         : N              
-DBusOut[17]                  : D22       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : E1        :        :                   :         : 1         :                
+DBusIn[17]                   : D21       : output : 2.5 V             :         : 6         : N              
+DBusOut[30]                  : D22       : output : 2.5 V             :         : 6         : N              
+DBusOut[23]                  : E1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
-DCBus[6]                     : E3        : output : 2.5 V             :         : 1         : N              
-IDBus[4]                     : E4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
-IABus[26]                    : E7        : output : 2.5 V             :         : 8         : N              
+IABus[15]                    : E7        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E8        : power  :                   : 2.5V    : 8         :                
-RegWrData[17]                : E9        : output : 2.5 V             :         : 8         : N              
-DBusIn[26]                   : E10       : output : 2.5 V             :         : 8         : N              
-DABus[1]                     : E11       : output : 2.5 V             :         : 7         : N              
-IDBus[25]                    : E12       : output : 2.5 V             :         : 7         : N              
-IDBus[21]                    : E13       : output : 2.5 V             :         : 7         : N              
-DBusOut[22]                  : E14       : output : 2.5 V             :         : 7         : N              
-PCsrc[1]                     : E15       : input  : 2.5 V             :         : 7         : N              
+DBusOut[17]                  : E9        : output : 2.5 V             :         : 8         : N              
+RegWrData[29]                : E10       : output : 2.5 V             :         : 8         : N              
+DABus[23]                    : E11       : output : 2.5 V             :         : 7         : N              
+RegWrData[12]                : E12       : output : 2.5 V             :         : 7         : N              
+IABus[20]                    : E13       : output : 2.5 V             :         : 7         : N              
+IABus[8]                     : E14       : output : 2.5 V             :         : 7         : N              
+DBusOut[5]                   : E15       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 7         :                
 VCCD_PLL2                    : E17       : power  :                   : 1.2V    :           :                
 GNDA2                        : E18       : gnd    :                   :         :           :                
 VCCIO6                       : E19       : power  :                   : 2.5V    : 6         :                
 GND                          : E20       : gnd    :                   :         :           :                
-DBusOut[3]                   : E21       : output : 2.5 V             :         : 6         : N              
-IDBus[13]                    : E22       : output : 2.5 V             :         : 6         : N              
-DABus[5]                     : F1        : output : 2.5 V             :         : 1         : N              
-MemWr                        : F2        : input  : 2.5 V             :         : 1         : N              
+DCBus[1]                     : E21       : output : 2.5 V             :         : 6         : N              
+DBusIn[10]                   : E22       : output : 2.5 V             :         : 6         : N              
+RegWrData[5]                 : F1        : output : 2.5 V             :         : 1         : N              
+DCBus[5]                     : F2        : output : 2.5 V             :         : 1         : N              
 GND                          : F3        : gnd    :                   :         :           :                
 VCCIO1                       : F4        : power  :                   : 2.5V    : 1         :                
 GNDA3                        : F5        : gnd    :                   :         :           :                
 VCCD_PLL3                    : F6        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F9        :        :                   :         : 8         :                
-DBusOut[7]                   : F10       : output : 2.5 V             :         : 8         : N              
-IABus[19]                    : F11       : output : 2.5 V             :         : 7         : N              
-PCWr                         : F12       : input  : 2.5 V             :         : 7         : N              
-DBusIn[4]                    : F13       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 7         :                
+DABus[14]                    : F8        : output : 2.5 V             :         : 8         : N              
+DBusIn[21]                   : F9        : output : 2.5 V             :         : 8         : N              
+IDBus[15]                    : F10       : output : 2.5 V             :         : 8         : N              
+RegWrData[9]                 : F11       : output : 2.5 V             :         : 7         : N              
+IABus[4]                     : F12       : output : 2.5 V             :         : 7         : N              
+DABus[8]                     : F13       : output : 2.5 V             :         : 7         : N              
+IABus[3]                     : F14       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 6         :                
 VCCA2                        : F18       : power  :                   : 2.5V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :         : 6         :                
-DBusOut[31]                  : F20       : output : 2.5 V             :         : 6         : N              
-RegWrData[22]                : F21       : output : 2.5 V             :         : 6         : N              
-RegWrData[24]                : F22       : output : 2.5 V             :         : 6         : N              
-P1                           : G1        : input  : 2.5 V             :         : 1         : N              
-P0                           : G2        : input  : 2.5 V             :         : 1         : N              
-DABus[20]                    : G3        : output : 2.5 V             :         : 1         : N              
-DBusIn[20]                   : G4        : output : 2.5 V             :         : 1         : N              
+RegWrData[3]                 : F19       : output : 2.5 V             :         : 6         : N              
+DABus[1]                     : F20       : output : 2.5 V             :         : 6         : N              
+DABus[6]                     : F21       : output : 2.5 V             :         : 6         : N              
+DABus[9]                     : F22       : output : 2.5 V             :         : 6         : N              
+ClrN                         : G1        : input  : 2.5 V             :         : 1         : N              
+CLK                          : G2        : input  : 2.5 V             :         : 1         : N              
+RegWrData[13]                : G3        : output : 2.5 V             :         : 1         : N              
+DBusIn[7]                    : G4        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
 VCCA3                        : G6        : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
-DBusOut[6]                   : G9        : output : 2.5 V             :         : 8         : N              
-DABus[31]                    : G10       : output : 2.5 V             :         : 8         : N              
-RegWrData[12]                : G11       : output : 2.5 V             :         : 8         : N              
-IABus[8]                     : G12       : output : 2.5 V             :         : 7         : N              
-IABus[22]                    : G13       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G14       :        :                   :         : 7         :                
+DABus[19]                    : G8        : output : 2.5 V             :         : 8         : N              
+IDBus[20]                    : G9        : output : 2.5 V             :         : 8         : N              
+DBusOut[2]                   : G10       : output : 2.5 V             :         : 8         : N              
+DCBus[0]                     : G11       : output : 2.5 V             :         : 8         : N              
+DBusOut[31]                  : G12       : output : 2.5 V             :         : 7         : N              
+DABus[28]                    : G13       : output : 2.5 V             :         : 7         : N              
+IABus[12]                    : G14       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 6         :                
-DBusOut[29]                  : G18       : output : 2.5 V             :         : 6         : N              
+RegWrData[4]                 : G18       : output : 2.5 V             :         : 6         : N              
 VCCIO6                       : G19       : power  :                   : 2.5V    : 6         :                
 GND                          : G20       : gnd    :                   :         :           :                
 GND+                         : G21       :        :                   :         : 6         :                
 GND+                         : G22       :        :                   :         : 6         :                
-ICBus[0]                     : H1        : output : 2.5 V             :         : 1         : N              
-DBusIn[13]                   : H2        : output : 2.5 V             :         : 1         : N              
+IABus[17]                    : H1        : output : 2.5 V             :         : 1         : N              
+DBusIn[28]                   : H2        : output : 2.5 V             :         : 1         : N              
 GND                          : H3        : gnd    :                   :         :           :                
 VCCIO1                       : H4        : power  :                   : 2.5V    : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 1         :                
-DBusIn[15]                   : H6        : output : 2.5 V             :         : 1         : N              
+DABus[21]                    : H6        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
 GND                          : H8        : gnd    :                   :         :           :                
-IDBus[27]                    : H9        : output : 2.5 V             :         : 8         : N              
-MemRd                        : H10       : input  : 2.5 V             :         : 8         : N              
-DABus[10]                    : H11       : output : 2.5 V             :         : 8         : N              
-DBusIn[19]                   : H12       : output : 2.5 V             :         : 7         : N              
-IDBus[19]                    : H13       : output : 2.5 V             :         : 7         : N              
-OF                           : H14       : output : 2.5 V             :         : 7         : N              
-DBusOut[19]                  : H15       : output : 2.5 V             :         : 7         : N              
-DBusIn[27]                   : H16       : output : 2.5 V             :         : 6         : N              
-DBusOut[4]                   : H17       : output : 2.5 V             :         : 6         : N              
-RegWrData[3]                 : H18       : output : 2.5 V             :         : 6         : N              
-DCBus[3]                     : H19       : output : 2.5 V             :         : 6         : N              
-RegWrData[5]                 : H20       : output : 2.5 V             :         : 6         : N              
-RegWrData[9]                 : H21       : output : 2.5 V             :         : 6         : N              
-DABus[11]                    : H22       : output : 2.5 V             :         : 6         : N              
-PCWrBN                       : J1        : input  : 2.5 V             :         : 1         : N              
-DBusOut[20]                  : J2        : output : 2.5 V             :         : 1         : N              
-IABus[31]                    : J3        : output : 2.5 V             :         : 1         : N              
-DBusIn[17]                   : J4        : output : 2.5 V             :         : 1         : N              
+DABus[3]                     : H9        : output : 2.5 V             :         : 8         : N              
+DBusOut[20]                  : H10       : output : 2.5 V             :         : 8         : N              
+RegWrData[25]                : H11       : output : 2.5 V             :         : 8         : N              
+DBusIn[29]                   : H12       : output : 2.5 V             :         : 7         : N              
+IDBus[5]                     : H13       : output : 2.5 V             :         : 7         : N              
+IABus[25]                    : H14       : output : 2.5 V             :         : 7         : N              
+IABus[19]                    : H15       : output : 2.5 V             :         : 7         : N              
+DABus[4]                     : H16       : output : 2.5 V             :         : 6         : N              
+DBusIn[18]                   : H17       : output : 2.5 V             :         : 6         : N              
+DBusOut[6]                   : H18       : output : 2.5 V             :         : 6         : N              
+DBusIn[12]                   : H19       : output : 2.5 V             :         : 6         : N              
+DABus[30]                    : H20       : output : 2.5 V             :         : 6         : N              
+IABus[1]                     : H21       : output : 2.5 V             :         : 6         : N              
+IDBus[26]                    : H22       : output : 2.5 V             :         : 6         : N              
+DABus[22]                    : J1        : output : 2.5 V             :         : 1         : N              
+DBusOut[9]                   : J2        : output : 2.5 V             :         : 1         : N              
+IDBus[16]                    : J3        : output : 2.5 V             :         : 1         : N              
+IABus[7]                     : J4        : output : 2.5 V             :         : 1         : N              
 GND                          : J5        : gnd    :                   :         :           :                
-DCBus[5]                     : J6        : output : 2.5 V             :         : 1         : N              
-DBusIn[28]                   : J7        : output : 2.5 V             :         : 1         : N              
+RegWrData[19]                : J6        : output : 2.5 V             :         : 1         : N              
+DBusIn[23]                   : J7        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : J8        : power  :                   : 1.2V    :           :                
 GND                          : J9        : gnd    :                   :         :           :                
 VCCINT                       : J10       : power  :                   : 1.2V    :           :                
@@ -305,64 +305,64 @@ VCCINT                       : J11       : power  :                   : 1.2V    
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
 VCCINT                       : J13       : power  :                   : 1.2V    :           :                
 VCCINT                       : J14       : power  :                   : 1.2V    :           :                
-ByteEn                       : J15       : input  : 2.5 V             :         : 6         : N              
-DBusIn[16]                   : J16       : output : 2.5 V             :         : 6         : N              
-RegWrData[31]                : J17       : output : 2.5 V             :         : 6         : N              
-RegWrData[21]                : J18       : output : 2.5 V             :         : 6         : N              
+IDBus[30]                    : J15       : output : 2.5 V             :         : 6         : N              
+IABus[0]                     : J16       : output : 2.5 V             :         : 6         : N              
+DBusOut[18]                  : J17       : output : 2.5 V             :         : 6         : N              
+DBusIn[6]                    : J18       : output : 2.5 V             :         : 6         : N              
 GND                          : J19       : gnd    :                   :         :           :                
 VCCIO6                       : J20       : power  :                   : 2.5V    : 6         :                
-DABus[4]                     : J21       : output : 2.5 V             :         : 6         : N              
-DABus[15]                    : J22       : output : 2.5 V             :         : 6         : N              
+DBusIn[9]                    : J21       : output : 2.5 V             :         : 6         : N              
+IABus[5]                     : J22       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : K1        : input  : 2.5 V             :         : 1         : N              
 ~ALTERA_DCLK~                : K2        : output : 2.5 V             :         : 1         : N              
 GND                          : K3        : gnd    :                   :         :           :                
 VCCIO1                       : K4        : power  :                   : 2.5V    : 1         :                
 nCONFIG                      : K5        :        :                   :         : 1         :                
 nSTATUS                      : K6        :        :                   :         : 1         :                
-RegWrData[20]                : K7        : output : 2.5 V             :         : 1         : N              
-RegWrData[1]                 : K8        : output : 2.5 V             :         : 1         : N              
+DBusIn[16]                   : K7        : output : 2.5 V             :         : 1         : N              
+IDBus[18]                    : K8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
 GND                          : K11       : gnd    :                   :         :           :                
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCINT                       : K14       : power  :                   : 1.2V    :           :                
-ALUctr[2]                    : K15       : input  : 2.5 V             :         : 6         : N              
-IDBus[3]                     : K16       : output : 2.5 V             :         : 6         : N              
-IABus[9]                     : K17       : output : 2.5 V             :         : 6         : N              
-DBusOut[2]                   : K18       : output : 2.5 V             :         : 6         : N              
-IDBus[14]                    : K19       : output : 2.5 V             :         : 6         : N              
+IDBus[31]                    : K15       : output : 2.5 V             :         : 6         : N              
+DBusOut[27]                  : K16       : output : 2.5 V             :         : 6         : N              
+DABus[11]                    : K17       : output : 2.5 V             :         : 6         : N              
+DBusIn[3]                    : K18       : output : 2.5 V             :         : 6         : N              
+IABus[22]                    : K19       : output : 2.5 V             :         : 6         : N              
 MSEL3                        : K20       :        :                   :         : 6         :                
-DBusIn[24]                   : K21       : output : 2.5 V             :         : 6         : N              
+IDBus[27]                    : K21       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : K22       : output : 2.5 V             :         : 6         : N              
 TMS                          : L1        : input  :                   :         : 1         :                
 TCK                          : L2        : input  :                   :         : 1         :                
 nCE                          : L3        :        :                   :         : 1         :                
 TDO                          : L4        : output :                   :         : 1         :                
 TDI                          : L5        : input  :                   :         : 1         :                
-DABus[28]                    : L6        : output : 2.5 V             :         : 2         : N              
-IABus[5]                     : L7        : output : 2.5 V             :         : 2         : N              
-RegWrData[15]                : L8        : output : 2.5 V             :         : 1         : N              
+IABus[6]                     : L6        : output : 2.5 V             :         : 2         : N              
+DCBus[6]                     : L7        : output : 2.5 V             :         : 2         : N              
+DABus[17]                    : L8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : L9        : power  :                   : 1.2V    :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 GND                          : L12       : gnd    :                   :         :           :                
 GND                          : L13       : gnd    :                   :         :           :                
 VCCINT                       : L14       : power  :                   : 1.2V    :           :                
-IABus[23]                    : L15       : output : 2.5 V             :         : 6         : N              
-IABus[11]                    : L16       : output : 2.5 V             :         : 6         : N              
+IDBus[11]                    : L15       : output : 2.5 V             :         : 6         : N              
+IABus[2]                     : L16       : output : 2.5 V             :         : 6         : N              
 MSEL2                        : L17       :        :                   :         : 6         :                
 MSEL1                        : L18       :        :                   :         : 6         :                
 VCCIO6                       : L19       : power  :                   : 2.5V    : 6         :                
 GND                          : L20       : gnd    :                   :         :           :                
-RegWrData[11]                : L21       : output : 2.5 V             :         : 6         : N              
-DABus[24]                    : L22       : output : 2.5 V             :         : 6         : N              
-IRWr                         : M1        : input  : 2.5 V             :         : 2         : N              
-IABus[4]                     : M2        : output : 2.5 V             :         : 2         : N              
-DBusOut[25]                  : M3        : output : 2.5 V             :         : 2         : N              
-DABus[6]                     : M4        : output : 2.5 V             :         : 2         : N              
-DBusIn[10]                   : M5        : output : 2.5 V             :         : 2         : N              
-IABus[30]                    : M6        : output : 2.5 V             :         : 2         : N              
+DBusOut[0]                   : L21       : output : 2.5 V             :         : 6         : N              
+IABus[28]                    : L22       : output : 2.5 V             :         : 6         : N              
+DBusOut[24]                  : M1        : output : 2.5 V             :         : 2         : N              
+IABus[16]                    : M2        : output : 2.5 V             :         : 2         : N              
+IDBus[3]                     : M3        : output : 2.5 V             :         : 2         : N              
+IDBus[24]                    : M4        : output : 2.5 V             :         : 2         : N              
+RegWrData[20]                : M5        : output : 2.5 V             :         : 2         : N              
+RegWrData[31]                : M6        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M8        :        :                   :         : 2         :                
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
@@ -371,19 +371,19 @@ GND                          : M11       : gnd    :                   :         
 GND                          : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCINT                       : M14       : power  :                   : 1.2V    :           :                
-DBusIn[0]                    : M15       : output : 2.5 V             :         : 5         : N              
-IABus[3]                     : M16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M15       :        :                   :         : 5         :                
+RegWrData[1]                 : M16       : output : 2.5 V             :         : 5         : N              
 MSEL0                        : M17       :        :                   :         : 6         :                
 CONF_DONE                    : M18       :        :                   :         : 6         :                
-IDBus[7]                     : M19       : output : 2.5 V             :         : 5         : N              
-IDBus[11]                    : M20       : output : 2.5 V             :         : 5         : N              
-IABus[2]                     : M21       : output : 2.5 V             :         : 5         : N              
-ExtCtr                       : M22       : input  : 2.5 V             :         : 5         : N              
-DBusIn[5]                    : N1        : output : 2.5 V             :         : 2         : N              
-ALUctr[1]                    : N2        : input  : 2.5 V             :         : 2         : N              
+IDBus[23]                    : M19       : output : 2.5 V             :         : 5         : N              
+IABus[10]                    : M20       : output : 2.5 V             :         : 5         : N              
+IDBus[7]                     : M21       : output : 2.5 V             :         : 5         : N              
+IDBus[25]                    : M22       : output : 2.5 V             :         : 5         : N              
+RegWrData[16]                : N1        : output : 2.5 V             :         : 2         : N              
+IDBus[0]                     : N2        : output : 2.5 V             :         : 2         : N              
 GND                          : N3        : gnd    :                   :         :           :                
 VCCIO2                       : N4        : power  :                   : 2.5V    : 2         :                
-DBusOut[10]                  : N5        : output : 2.5 V             :         : 2         : N              
+IABus[27]                    : N5        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : N6        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N7        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N8        :        :                   :         : 2         :                
@@ -393,18 +393,18 @@ GND                          : N11       : gnd    :                   :         
 GND                          : N12       : gnd    :                   :         :           :                
 GND                          : N13       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N14       :        :                   :         : 5         :                
-IDBus[6]                     : N15       : output : 2.5 V             :         : 5         : N              
-IABus[17]                    : N16       : output : 2.5 V             :         : 5         : N              
-IDBus[30]                    : N17       : output : 2.5 V             :         : 5         : N              
-IABus[27]                    : N18       : output : 2.5 V             :         : 5         : N              
-ALUAsrc                      : N19       : input  : 2.5 V             :         : 5         : N              
-IDBus[28]                    : N20       : output : 2.5 V             :         : 5         : N              
-IABus[24]                    : N21       : output : 2.5 V             :         : 5         : N              
-IABus[20]                    : N22       : output : 2.5 V             :         : 5         : N              
-RegWrData[26]                : P1        : output : 2.5 V             :         : 2         : N              
-PCsrc[0]                     : P2        : input  : 2.5 V             :         : 2         : N              
-DBusOut[5]                   : P3        : output : 2.5 V             :         : 2         : N              
-IDBus[8]                     : P4        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N15       :        :                   :         : 5         :                
+DABus[20]                    : N16       : output : 2.5 V             :         : 5         : N              
+DBusOut[13]                  : N17       : output : 2.5 V             :         : 5         : N              
+DABus[27]                    : N18       : output : 2.5 V             :         : 5         : N              
+IDBus[12]                    : N19       : output : 2.5 V             :         : 5         : N              
+DBusOut[7]                   : N20       : output : 2.5 V             :         : 5         : N              
+DABus[25]                    : N21       : output : 2.5 V             :         : 5         : N              
+RegWrData[24]                : N22       : output : 2.5 V             :         : 5         : N              
+IDBus[29]                    : P1        : output : 2.5 V             :         : 2         : N              
+RegWrData[26]                : P2        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   :         : 2         :                
+ICBus[0]                     : P4        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P5        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P6        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P7        :        :                   :         : 2         :                
@@ -415,16 +415,16 @@ VCCINT                       : P11       : power  :                   : 1.2V    
 VCCINT                       : P12       : power  :                   : 1.2V    :           :                
 VCCINT                       : P13       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 5         :                
-IABus[14]                    : P15       : output : 2.5 V             :         : 5         : N              
-IABus[6]                     : P16       : output : 2.5 V             :         : 5         : N              
-IDBus[31]                    : P17       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P15       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P17       :        :                   :         : 5         :                
 VCCIO5                       : P18       : power  :                   : 2.5V    : 5         :                
 GND                          : P19       : gnd    :                   :         :           :                
-DABus[3]                     : P20       : output : 2.5 V             :         : 5         : N              
-IDBus[20]                    : P21       : output : 2.5 V             :         : 5         : N              
-DABus[9]                     : P22       : output : 2.5 V             :         : 5         : N              
-IDBus[16]                    : R1        : output : 2.5 V             :         : 2         : N              
-DABus[23]                    : R2        : output : 2.5 V             :         : 2         : N              
+RegWrData[27]                : P20       : output : 2.5 V             :         : 5         : N              
+DBusIn[25]                   : P21       : output : 2.5 V             :         : 5         : N              
+RegWrData[15]                : P22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R2        :        :                   :         : 2         :                
 GND                          : R3        : gnd    :                   :         :           :                
 VCCIO2                       : R4        : power  :                   : 2.5V    : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R5        :        :                   :         : 2         :                
@@ -435,18 +435,18 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R12       :        :                   :         : 3         :                
-RWDSel                       : R13       : input  : 2.5 V             :         : 4         : N              
+DBusOut[4]                   : R13       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R15       :        :                   :         : 4         :                
-DBusIn[22]                   : R16       : output : 2.5 V             :         : 4         : N              
-DBusOut[24]                  : R17       : output : 2.5 V             :         : 5         : N              
-DABus[18]                    : R18       : output : 2.5 V             :         : 5         : N              
-IDBus[23]                    : R19       : output : 2.5 V             :         : 5         : N              
-DABus[22]                    : R20       : output : 2.5 V             :         : 5         : N              
-IABus[1]                     : R21       : output : 2.5 V             :         : 5         : N              
-RegWrData[23]                : R22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R17       :        :                   :         : 5         :                
+DBusOut[25]                  : R18       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R19       :        :                   :         : 5         :                
+IDBus[8]                     : R20       : output : 2.5 V             :         : 5         : N              
+DBusOut[1]                   : R21       : output : 2.5 V             :         : 5         : N              
+IDBus[19]                    : R22       : output : 2.5 V             :         : 5         : N              
 GND+                         : T1        :        :                   :         : 2         :                
-CLRN                         : T2        : input  : 2.5 V             :         : 2         : N              
+GND+                         : T2        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T3        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T4        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T5        :        :                   :         : 2         :                
@@ -454,12 +454,12 @@ VCCA1                        : T6        : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3         :                
-RegWrData[16]                : T10       : output : 2.5 V             :         : 3         : N              
-RegWrData[6]                 : T11       : output : 2.5 V             :         : 3         : N              
-IABus[18]                    : T12       : output : 2.5 V             :         : 4         : N              
+RegWrData[18]                : T10       : output : 2.5 V             :         : 3         : N              
+RegWrData[8]                 : T11       : output : 2.5 V             :         : 3         : N              
+DBusOut[8]                   : T12       : output : 2.5 V             :         : 4         : N              
 VCCINT                       : T13       : power  :                   : 1.2V    :           :                
-IDBus[10]                    : T14       : output : 2.5 V             :         : 4         : N              
-IABus[29]                    : T15       : output : 2.5 V             :         : 4         : N              
+IABus[24]                    : T14       : output : 2.5 V             :         : 4         : N              
+IABus[31]                    : T15       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T16       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :         : 5         :                
@@ -467,7 +467,7 @@ VCCIO5                       : T19       : power  :                   : 2.5V    
 GND                          : T20       : gnd    :                   :         :           :                
 GND+                         : T21       :        :                   :         : 5         :                
 GND+                         : T22       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U1        :        :                   :         : 2         :                
+DBusOut[3]                   : U1        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U2        :        :                   :         : 2         :                
 GND                          : U3        : gnd    :                   :         :           :                
 VCCIO2                       : U4        : power  :                   : 2.5V    : 2         :                
@@ -475,64 +475,64 @@ GNDA1                        : U5        : gnd    :                   :         
 VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U8        :        :                   :         : 3         :                
-DABus[16]                    : U9        : output : 2.5 V             :         : 3         : N              
-IDBus[29]                    : U10       : output : 2.5 V             :         : 3         : N              
-RegWrData[28]                : U11       : output : 2.5 V             :         : 3         : N              
-DABus[26]                    : U12       : output : 2.5 V             :         : 4         : N              
-DBusOut[15]                  : U13       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U9        :        :                   :         : 3         :                
+RegWrData[22]                : U10       : output : 2.5 V             :         : 3         : N              
+DBusIn[14]                   : U11       : output : 2.5 V             :         : 3         : N              
+IDBus[6]                     : U12       : output : 2.5 V             :         : 4         : N              
+DABus[18]                    : U13       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U14       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4         :                
 VCCINT                       : U16       : power  :                   : 1.2V    :           :                
 VCCINT                       : U17       : power  :                   : 1.2V    :           :                
 VCCA4                        : U18       : power  :                   : 2.5V    :           :                
-IDBus[24]                    : U19       : output : 2.5 V             :         : 5         : N              
-IDBus[26]                    : U20       : output : 2.5 V             :         : 5         : N              
-DBusIn[18]                   : U21       : output : 2.5 V             :         : 5         : N              
-IABus[10]                    : U22       : output : 2.5 V             :         : 5         : N              
-RWSel                        : V1        : input  : 2.5 V             :         : 2         : N              
-DBusOut[11]                  : V2        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U19       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U20       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U21       :        :                   :         : 5         :                
+IDBus[4]                     : U22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V2        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V3        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
-DBusOut[30]                  : V8        : output : 2.5 V             :         : 3         : N              
-DBusIn[6]                    : V9        : output : 2.5 V             :         : 3         : N              
-DBusOut[26]                  : V10       : output : 2.5 V             :         : 3         : N              
-DABus[19]                    : V11       : output : 2.5 V             :         : 3         : N              
-IDBus[17]                    : V12       : output : 2.5 V             :         : 4         : N              
-DBusIn[21]                   : V13       : output : 2.5 V             :         : 4         : N              
-IDBus[9]                     : V14       : output : 2.5 V             :         : 4         : N              
-IABus[21]                    : V15       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3         :                
+RegWrData[23]                : V10       : output : 2.5 V             :         : 3         : N              
+DCBus[2]                     : V11       : output : 2.5 V             :         : 3         : N              
+DBusIn[15]                   : V12       : output : 2.5 V             :         : 4         : N              
+DABus[12]                    : V13       : output : 2.5 V             :         : 4         : N              
+IABus[18]                    : V14       : output : 2.5 V             :         : 4         : N              
+IABus[29]                    : V15       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V16       :        :                   :         : 4         :                
 VCCD_PLL4                    : V17       : power  :                   : 1.2V    :           :                
 GNDA4                        : V18       : gnd    :                   :         :           :                
 VCCIO5                       : V19       : power  :                   : 2.5V    : 5         :                
 GND                          : V20       : gnd    :                   :         :           :                
-DABus[8]                     : V21       : output : 2.5 V             :         : 5         : N              
-DABus[12]                    : V22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V21       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V22       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W2        :        :                   :         : 2         :                
 GND                          : W3        : gnd    :                   :         :           :                
 VCCIO2                       : W4        : power  :                   : 2.5V    : 2         :                
 VCCIO3                       : W5        : power  :                   : 2.5V    : 3         :                
-DABus[29]                    : W6        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W7        :        :                   :         : 3         :                
-IMRd                         : W8        : input  : 2.5 V             :         : 3         : N              
+IDBus[1]                     : W8        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : W9        : power  :                   : 2.5V    : 3         :                
-RegWrData[14]                : W10       : output : 2.5 V             :         : 3         : N              
+DBusIn[22]                   : W10       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : W11       : power  :                   : 2.5V    : 3         :                
 VCCIO4                       : W12       : power  :                   : 2.5V    : 4         :                
-RegWrData[0]                 : W13       : output : 2.5 V             :         : 4         : N              
-DBusOut[9]                   : W14       : output : 2.5 V             :         : 4         : N              
-RegWr                        : W15       : input  : 2.5 V             :         : 4         : N              
+DABus[31]                    : W13       : output : 2.5 V             :         : 4         : N              
+IDBus[13]                    : W14       : output : 2.5 V             :         : 4         : N              
+IDBus[2]                     : W15       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : W16       : power  :                   : 2.5V    : 4         :                
-IABus[13]                    : W17       : output : 2.5 V             :         : 4         : N              
+DBusOut[10]                  : W17       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : W18       : power  :                   : 2.5V    : 4         :                
-DBusOut[18]                  : W19       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W19       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W20       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W21       :        :                   :         : 5         :                
-IDBus[0]                     : W22       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W22       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y2        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y3        :        :                   :         : 3         :                
@@ -540,16 +540,16 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : Y4        :        :                   :      
 GND                          : Y5        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y7        :        :                   :         : 3         :                
-DBusIn[2]                    : Y8        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y8        :        :                   :         : 3         :                
 GND                          : Y9        : gnd    :                   :         :           :                
-DBusIn[30]                   : Y10       : output : 2.5 V             :         : 3         : N              
+DBusIn[24]                   : Y10       : output : 2.5 V             :         : 3         : N              
 GND                          : Y11       : gnd    :                   :         :           :                
 GND                          : Y12       : gnd    :                   :         :           :                
-DABus[7]                     : Y13       : output : 2.5 V             :         : 4         : N              
+DBusOut[15]                  : Y13       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : Y14       : power  :                   : 2.5V    : 4         :                
 GND                          : Y15       : gnd    :                   :         :           :                
 GND                          : Y16       : gnd    :                   :         :           :                
-DABus[21]                    : Y17       : output : 2.5 V             :         : 4         : N              
+OF                           : Y17       : output : 2.5 V             :         : 4         : N              
 GND                          : Y18       : gnd    :                   :         :           :                
 VCCIO5                       : Y19       : power  :                   : 2.5V    : 5         :                
 GND                          : Y20       : gnd    :                   :         :           :                
